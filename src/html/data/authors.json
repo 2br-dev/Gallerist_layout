@@ -1,0 +1,329 @@
+[
+  {
+    "avatar": "https://i.pravatar.cc/300?u=1",
+    "name": "Ольга Кононович",
+    "location": "Россия, Краснодар",
+    "art_count": 21,
+    "min_price": "14 000",
+    "registered": "12 апреля 2020",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм",
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=2",
+    "name": "Настасья Лью",
+    "location": "Россия, Нижний Новгород",
+    "art_count": 16,
+    "min_price": "6 500",
+    "registered": "8 марта 2020",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=3",
+    "name": "Екатерина Сапельникова",
+    "location": "Россия, Усурийск",
+    "art_count": 16,
+    "min_price": "4 200",
+    "registered": "21 февраля 2019",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм",
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=4",
+    "name": "Евгений Костин",
+    "location": "Россия, Саратов",
+    "art_count": 8,
+    "min_price": "6 500",
+    "registered": "23 февраля 2021",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=5",
+    "name": "Антонина Павлова",
+    "location": "Россия, Краснодар",
+    "art_count": 21,
+    "min_price": "14 000",
+    "registered": "12 июля 2020",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм",
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=6",
+    "name": "Вахтанг Мураев",
+    "location": "Россия, Геленджик",
+    "art_count": 0,
+    "min_price": 0,
+    "registered": "12 мая 2021",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=7",
+    "name": "Ольга Кононович",
+    "location": "Россия, Краснодар",
+    "art_count": 21,
+    "min_price": "14 000",
+    "registered": "12 апреля 2020",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=8",
+    "name": "Настасья Лью",
+    "location": "Россия, Нижний Новгород",
+    "art_count": 16,
+    "min_price": "6 500",
+    "registered": "8 марта 2020",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=9",
+    "name": "Екатерина Сапельникова",
+    "location": "Россия, Усурийск",
+    "art_count": 16,
+    "min_price": "4 200",
+    "registered": "21 февраля 2019",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=10",
+    "name": "Евгений Костин",
+    "location": "Россия, Саратов",
+    "art_count": 8,
+    "min_price": "6 500",
+    "registered": "23 февраля 2021",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=11",
+    "name": "Антонина Павлова",
+    "location": "Россия, Краснодар",
+    "art_count": 21,
+    "min_price": "14 000",
+    "registered": "12 июля 2020",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  },
+  {
+    "avatar": "https://i.pravatar.cc/300?u=12",
+    "name": "Вахтанг Мураев",
+    "location": "Россия, Геленджик",
+    "art_count": 0,
+    "min_price": 0,
+    "registered": "12 мая 2021",
+    "tags": [
+      "Графика",
+      "Живопись",
+      "Коллаж",
+      "Андерграунд",
+      "Импрессионизм"
+    ],
+    "gallery": [
+      "https://picsum.photos/id/218/100/100",
+      "https://picsum.photos/id/219/100/100",
+      "https://picsum.photos/id/220/100/100",
+      "https://picsum.photos/id/221/100/100",
+      "https://picsum.photos/id/222/100/100",
+      "https://picsum.photos/id/223/100/100",
+      "https://picsum.photos/id/215/100/100",
+      "https://picsum.photos/id/225/100/100",
+      "https://picsum.photos/id/216/100/100"
+    ]
+  }
+]

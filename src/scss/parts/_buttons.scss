@@ -1,0 +1,53 @@
+.btn{
+    display: inline-block;
+    line-height: 35px;
+    padding: 0 15px;
+    background-color: black;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: background-color .2s;
+    background-image: url(/img/btn-labe.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 10px auto;
+    color: #fff;
+    white-space: nowrap;
+
+    &:hover{
+        background-color: #333;
+    }
+
+    & .white-color{
+        display: inline-block;
+        color: #fff;
+    }
+
+    & .black-text{
+        color: #000;
+    }
+
+    &.btn-flat{
+        background-color: rgba(black, .05);
+        color: black;
+
+        &:hover{
+            background-color: rgba(black, .1);
+        }
+    }
+
+    &.btn-small{
+        background-image: none;
+        line-height: 26px;
+        padding: 0 10px;
+    }
+
+    &.btn-large{
+
+        @media(min-width: 800px){
+            font-size: 24px;
+            line-height: 46px;
+            padding: 0 20px;
+        }
+    }
+}

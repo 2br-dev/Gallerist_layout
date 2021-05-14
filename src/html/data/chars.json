@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Размер",
+        "icon": "mdi-image-size-select-large",
+        "value": "60x100x3 см"
+    },
+    {
+        "name": "Стиль",
+        "icon": "mdi-palette",
+        "value": "Модерн"
+    },
+    {
+        "name": "Техника",
+        "icon": "mdi-invert-colors",
+        "value": "Живопись"
+    },
+    {
+        "name": "Материал",
+        "icon": "mdi-wrench",
+        "value": "Акрил"
+    },
+    {
+        "name": "Ориентация",
+        "icon": "mdi-crop-rotate",
+        "value": "Портретная"
+    },
+    {
+        "name": "Территориально",
+        "icon": "mdi-map-marker",
+        "value": "Россия, город Нижний Новгород"
+    }
+]

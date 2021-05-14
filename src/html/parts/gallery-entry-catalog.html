@@ -1,0 +1,53 @@
+<div class="col l4 m6 s12 gallery-entry @@colors">
+    <div class="image lazy">
+        <a href="/product.html">
+            <div class="lazy" data-src="@@image"></div>
+        </a>
+        <div class="info-trigger"><i class="mdi mdi-information-outline"></i></div>
+        <div class="info">
+            <div class="info-block">
+                <div class="mdi mdi-image-size-select-large"></div>
+                <span>@@size</span>
+            </div>
+            <div class="info-block">
+                <div class="mdi mdi-palette"></div>
+                <span>@@style</span>
+            </div>
+            <div class="info-block">
+                <div class="mdi mdi-invert-colors"></div>
+                <span>@@technique</span>
+            </div>
+            <div class="info-block">
+                <div class="mdi mdi-wrench"></div>
+                <span>@@material</span>
+            </div>
+            <div class="info-block">
+                <div class="mdi mdi-crop-rotate"></div>
+                <span>@@orientation</span>
+            </div>
+            <div class="info-block">
+                <div class="mdi mdi-map-marker"></div>
+                <span>@@location</span>
+            </div>
+            <div class="separator"></div>
+            <div class="info-actions">
+                <a href=""><i class="mdi mdi-monitor-screenshot"></i></a>
+                <a href=""><i class="mdi mdi-share-variant"></i></a>
+                @@if(liked==true){
+                    <a href=""><i class="mdi mdi-heart"></i></a>
+                }
+                @@if(liked==false){
+                    <a href=""><i class="mdi mdi-heart-outline"></i></a>
+                }
+            </div>
+        </div>
+    </div>
+        <div class="info-small">
+        <div class="name">
+            <a href="/product.html">@@name</a>
+        </div>
+        <div class="author">
+            <a href="/author.html">@@author</a>
+        </div>
+    </div>
+</div>

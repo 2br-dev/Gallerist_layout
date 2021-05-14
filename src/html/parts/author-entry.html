@@ -1,0 +1,53 @@
+<div class="author-entry">
+    <div class="avatar-wrapper">
+        <a href="/author.html">
+            <div class="avatar lazy" data-src="@@avatar"></div>
+        </a>
+    </div>
+    <div class="info-wrapper">
+        <div class="name">
+            <a href="/author.html">@@name</a>
+        </div>
+        <div class="kv-pair">
+            <div class="key">
+                <i class="mdi mdi-map-marker"></i>
+                <span>Территориально</span>
+            </div>
+            <div class="value">@@location</div>
+        </div>
+        <div class="kv-pair">
+            <div class="key">
+                <i class="mdi mdi-image-multiple"></i>
+                <span>Количество работ</span>
+            </div>
+            <div class="value">@@art_count</div>
+        </div>
+        <div class="kv-pair">
+            <div class="key">
+                <i class="mdi mdi-cash-minus"></i>
+                <span>Минимальный ценник</span>
+            </div>
+            <div class="value">@@min_price ₽</div>
+        </div>
+        <div class="kv-pair">
+            <div class="key">
+                <i class="mdi mdi-calendar-check"></i>
+                <span>Дата регистрации</span>
+            </div>
+            <div class="value">@@registered</div>
+        </div>
+    </div>
+    <div class="tags-wrapper">
+        @@for(var i=0; i<tags.length; i++){
+            <a href="/gallery.html" class="tag">`+tags[i]+`</a>
+        }
+    </div>
+    <div class="gallery">
+        @@for(var i=0; i<gallery.length; i++){
+            <a class="author-gallery-image lazy" data-src="`+gallery[i]+`"></a>
+        }
+        <a class="author-gallery-image more-button" href="/author.html">
+            <span class="count">+12</span>
+        </a>
+    </div>
+</div>

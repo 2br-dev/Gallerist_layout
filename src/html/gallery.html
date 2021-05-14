@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./parts/head.html', {title: "Страница продукта"})
+</head>
+<body>
+    @@include('./parts/navi.html')
+    <div class="global-wrapper" id="gallery">
+        <section id="main-data">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Галерея</h1>
+                    </div>
+                    @@loop('./parts/gallery-entry-catalog.html', './data/gallery.json')
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <ul class="pagination">
+                            <li><a href="" class="btn btn-flat"><div class="gold-text">1</div></a></li>
+                            <li><a class="btn btn-flat">…</a></li>
+                            <li><a href="" class="btn btn-flat"><div class="gold-text">12</div></a></li>
+                            <li><a href="" class="btn btn-flat"><div class="gold-text">13</div></a></li>
+                            <li><a href="" class="btn"><div class="gold-text">14</div></a></li>
+                            <li><a class="btn btn-flat">…</a></li>
+                            <li><a href="" class="btn btn-flat"><div class="gold-text">134</div></a></li>
+                        </ul>
+                    </div>
+                    <div class="col s6 right-align"><a href="/authors.html" class="btn">Смотреть авторов</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="other-authors">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Интересные авторы</h2>
+                    </div>
+                    <div class="col s12">
+                        <div class="swiper-container" id="other-authors-swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./parts/author-swiper.html', './data/authors.json')
+                            </div>
+                        </div>
+                        <div class="swiper-navi">
+                            <div class="swiper-pagination" id="other-authors-navi"></div>
+                            <div class="swiper-action"><a href="/gallery.html" class="btn">Смотреть<span class="gold-text"> все</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    @@include('./parts/footer.html')
+    @@include('./parts/scripts.html')
+    @@include('./parts/modals.html')
+</body>
+</html>

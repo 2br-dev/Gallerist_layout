@@ -1,0 +1,116 @@
+div#gallery, div#author{
+
+    & .author-data{
+        display: flex;
+        margin-bottom: 1.5rem;
+
+        & .avatar-wrapper{
+            width: 25%;
+            flex-shrink: 0;
+        }
+
+        & .info-wrapper{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            & .name{
+                padding-left: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            & .kv-pair{
+                line-height: 26px;
+                display: flex;
+                
+                & .key, & .value{
+                    padding-left: 20px;
+                    white-space: nowrap;
+                    display: table-cell;
+                }
+
+                & .key{
+
+                    color: #aaa;
+                    width: 180px;
+                    flex-shrink: 0;
+
+                    i{
+                        display: none;
+                    }
+
+                    @media(max-width: 600px){
+
+                        width: fit-content;
+
+                        span{
+                            display: none;
+                        }
+
+                        i{
+                            display: inline;
+                        }
+                    }
+                }
+                
+                & .value{
+                    flex-grow: 1;
+                }
+            }
+        }
+
+        @media(max-width: 400px){
+            flex-direction: column;
+
+            & .avatar-wrapper{
+                width: 100%;
+
+                & .avatar{
+                    width: 50%;
+                    height: 0;
+                    padding-top: 50%;
+                    margin: auto;
+                    margin-bottom: 20px;
+                }
+            }
+
+            & .actions-wrapper{
+                order: -1;
+                text-align: right;
+            }
+        }
+    }
+
+    & .text-wrapper{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    & .gallery-entry{
+
+        & .image{
+
+            overflow: hidden;
+
+            & .lazy{
+                padding-top: 70%;
+                background-size: cover;
+                background-position: center;
+                transition: transform .4s;
+            }
+
+            &:hover{
+                
+                & .lazy{
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    }
+}

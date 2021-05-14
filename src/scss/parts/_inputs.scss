@@ -1,0 +1,83 @@
+.input-field{
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+
+    & textarea,
+    & input{
+        border: 0;
+        font-size: 16px;
+        line-height: 30px;
+        width: 100%;
+        background: transparent;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::placeholder{
+            color: transparent;
+        }
+
+        & ~ label{
+            position: absolute;
+            z-index: 2;
+            pointer-events: none;
+            top: 18px;
+            left: 0px;
+            font-size: 16px;
+            transition: font-size .2s, top .2s;
+        }
+
+        &:not(:placeholder-shown), &:focus{
+
+            &::placeholder{
+                color: rgba(black, .2);
+            }
+
+            & ~ label{
+                top: 0;
+                font-size: 12px;
+            }
+        }
+
+    }
+    & .error{
+        font-size: 12px;
+        position: absolute;
+        top: 100%;
+        color: saturate($gold, 20);
+        pointer-events: none;
+        // color: transparent;
+    }
+}
+
+.input-field-check{
+
+    & input[type=checkbox].styled{
+        display: none;
+
+        & ~ label{
+
+            user-select: none;
+            cursor: pointer;
+            
+            &:before{
+
+                content: "\F012C";
+                font-family: 'Material Design Icons';
+                margin-right: 6px;
+                box-shadow: 0 0 0 1px black;
+                transition: color .2s, background-color .2s;
+                background: #fff;
+                color: transparent;
+            }
+        }
+
+        &:checked ~ label:before{
+            color: $gold;
+            background: black;
+        }
+    }
+}
