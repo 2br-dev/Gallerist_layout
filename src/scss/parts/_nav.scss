@@ -7,12 +7,16 @@ header{
     right: 0;
     z-index: 20;
     background: $paper;
+    width: fit-content;
 
     @media(max-width: $mobile-edge){
         background: black;
         height: 54px;
         width: 100%;
         display: flex;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
 
         & .sidenav-trigger{
             position: fixed;

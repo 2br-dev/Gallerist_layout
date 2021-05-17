@@ -1,5 +1,15 @@
 const PATH = "/js/";
-var sameAuthor, sameStyle, otherAuthors;
+var 
+    sameAuthor, 
+    sameStyle, 
+    otherAuthors, 
+    tabs, 
+    datepicker, 
+    sortable,
+    naviSidenav,
+    editorSidenav,
+    chatSidenav;
+var editMode = "view";
 
 $(() => {
 
@@ -10,12 +20,35 @@ $(() => {
     $('body').on('click', '.close-search', closeSearcher);
     $('body').on('click', '.searcher', closeSearcherOutside);
     $('body').on('click', '.folder', toggleSidenavFolder);
+    $('body').on('click', '#saver', toggleEdit);
+    $('body').on('click', '.datePicker', openPicker);
+    $('body').on('click', '.profile-gallery-entry', selectGalleryItem);
     $(window).on('resize', updateFooterHeight);
 
     init();
 })
 
 //= Обработчики событий =======================================================
+function selectGalleryItem(){
+    $('.profile-gallery-entry').removeClass("selected");
+    $(this).addClass("selected");
+
+    if($(window).outerWidth() < 1400){
+        editorSidenav.open();
+    }
+    console.log("Ajax-заполнение деталей картины в редакторе");
+}
+function dragCompleteCallback(e){
+    console.log({
+        "Старый индекс элемента:":e.oldIndex,
+        "Новый индекс элемента:":e.newIndex
+    })
+}
+function openPicker(e){
+    e.preventDefault();
+    var instance = M.Datepicker.getInstance(this);
+    instance.open();
+}
 function toggleSidenavFolder(e){
     if(e){e.preventDefault();}
     $(this).toggleClass('expanded');
@@ -57,6 +90,63 @@ function init(){
         })
     }
 
+    datepicker = M.Datepicker.init(document.querySelectorAll('.datepicker'), {
+        firstDay: 1,
+        i18n: {
+            "done": "Принять",
+            "cancel": "Отмена",
+            months: [
+                'Январь',
+                'Февраль',
+                'Март',
+                'Апрель',
+                'Май',
+                'Июнь',
+                'Июль',
+                'Август',
+                'Сентябрь',
+                'Октябрь',
+                'Ноябрь',
+                'Декабрь'
+            ],
+            monthsShort: [
+                "Янв",
+                "Фев",
+                "Мрт",
+                "Апр",
+                "Май",
+                "Июн",
+                "Июл",
+                "Авг",
+                "Сен",
+                "Окт",
+                "Ноя",
+                "Дек"
+            ],
+            "weekdays": [
+                "Воскресенье",
+                "Понедельник",
+                "Вторник",
+                "Среда",
+                "Четверг",
+                "Пятница",
+                "Суббота"
+            ],
+            "weekdaysShort": [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+            "weekdaysAbbrev": ["В","П","В","С","Ч","П","С"]
+        }
+    });
+
+    tabs = M.Tabs.init(document.querySelectorAll('.tabs'));
+
     if($('.swiper-container').length){
         loadScript(PATH + "/swiper-bundle.js", () => {
 
@@ -93,13 +183,61 @@ function init(){
         })
     }
 
+    if($('.sortable-wrapper').length){
+        loadScript("/js/Sortable.min.js", () => {
+            sortable = new Sortable(document.querySelector('.sortable-wrapper'), {
+                animation: 150,
+                onEnd: dragCompleteCallback,
+                handle: '.drag-handler'
+            })
+        });
+    }
+
     $('.modal').modal({
         opacity: .9
     });
 
-    $('.sidenav').sidenav();
+    naviSidenav = M.Sidenav.init(document.querySelector('#mobile-navi'));
+
+    if($('#gallery-editor').length){
+        editorSidenav = M.Sidenav.init(document.querySelector('#gallery-editor'), {
+            edge: "right"
+        });
+    }
+
+    if($('#chat-sidenav').length){
+        chatSidenav = M.Sidenav.init(document.querySelector('#chat-sidenav'), {
+            edge: "right"
+        });
+    }
+
+    $('.chips').chips();
 
     updateFooterHeight();
+}
+
+function toggleEdit(e){
+
+    e.preventDefault();
+
+    var editHtml = "Редактировать <span class='gold-text'>профиль</span>";
+    var saveHtml = "Сохранить <span class='gold-text'>изменения</span>";
+
+    editMode = editMode == "edit" ? "view" : "edit";
+
+    if(editMode == "edit"){
+        $(".hidden-input").addClass("obvious");
+        $(".datepicker").removeClass("hidden");
+        $(this).html(saveHtml);
+    }else{
+        $(".hidden-input").removeClass("obvious");
+        $(".datepicker").addClass("hidden");
+        $(this).html(editHtml);
+
+        // Ajax-запрос на сохранение
+        // И уведомление о результатах запроса
+        M.toast({html: "Изменения успешно внесены!"});
+    }
 }
 
 function swiperOptions(naviElement, breakpoints){

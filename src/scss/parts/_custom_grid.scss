@@ -50,6 +50,7 @@
 	$i: 1;
 
 	@while($i <=$cols) {
+		
 		$perc: unquote((100 / ($cols / $i)) + "%");
 
 		&.#{$class}#{$i} {
@@ -80,7 +81,6 @@
 		$i: $i+1;
 	}
 }
-
 
 .row {
 	margin-left: auto;

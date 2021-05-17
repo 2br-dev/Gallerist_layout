@@ -11,7 +11,8 @@
     "orientation": "Альбомная",
     "location": "Россия, Нижний Новгород",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Папоротник",
@@ -25,7 +26,8 @@
     "orientation": "Портретная",
     "location": "Нижний Новгород",
     "liked": false,
-    "colors": "light"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Абстракция",
@@ -39,7 +41,8 @@
     "orientation": "Альбомная",
     "location": "Россия, Тольятти",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Портрет баронессы",
@@ -53,7 +56,8 @@
     "orientation": "Портретная",
     "location": "Италия, Сорренто",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Колесо обозрения",
@@ -67,7 +71,8 @@
     "orientation": "Альбомная",
     "location": "Россия, Москва",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "На мосту",
@@ -81,7 +86,8 @@
     "orientation": "Портретная",
     "location": "Россия, Санкт-Петербург",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Еще абстракция",
@@ -95,7 +101,8 @@
     "orientation": "Альбомная",
     "location": "Россия, Тольятти",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": "selected"
   },
   {
     "name": "Око",
@@ -109,7 +116,8 @@
     "orientation": "Портретная",
     "location": "Россия, Уфа",
     "liked": true,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Жук",
@@ -123,7 +131,8 @@
     "orientation": "Портретная",
     "location": "США, Торонто",
     "liked": true,
-    "colors": "light"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Зимний двор",
@@ -137,7 +146,8 @@
     "orientation": "Альбомная",
     "location": "Новороссийск",
     "liked": true,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Приплыли",
@@ -151,7 +161,8 @@
     "orientation": "Портретная",
     "location": "Россия, Пятигорск",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   },
   {
     "name": "Птах",
@@ -165,6 +176,7 @@
     "orientation": "Альбомная",
     "location": "Россия, Пятигорск",
     "liked": false,
-    "colors": "dark"
+    "published": "12 апреля 2021",
+    "extraClass": ""
   }
 ]

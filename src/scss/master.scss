@@ -1,9 +1,10 @@
 //= Import framework =================================
 @import "./framework/materialize";
+@import "./parts/vars";
+@import "./framework/components/forms/select";
 @import "./framework/swiper_bundle";
 
 //= Import custom parts ==============================
-@import "./parts/vars";
 @import "./parts/buttons";
 @import "./parts/footer";
 @import "./parts/custom_grid";
@@ -17,3 +18,4 @@
 @import "./pages/product";
 @import "./pages/gallery";
 @import "./pages/authors";
+@import "./pages/profile";

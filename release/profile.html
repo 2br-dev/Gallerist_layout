@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/master.css">
+<title>Кабинет пользователя</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="/" class="logo"></a>
+        <ul class="nav-menu">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/gallery.html">Галерея</a></li>
+            <li><a href="/authors.html">Авторы</a></li>
+            <li>
+                <a href="" class="events">Мероприятия</a>
+                <ul>
+                    <li><a href="">Выставки</a></li>
+                    <li><a href="">Аукционы</a></li>
+                    <li><a href="">Мастерклассы</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a class="search-trigger"><i class="mdi mdi-magnify"></i></a>
+            <a href="#login" class="btn btn-small modal-trigger">
+                <span class="white-text">Войти</span>
+            </a>
+        </div>
+        <div class="burger-wrapper">
+            <a href="#mobile-navi" class="sidenav-trigger">
+                <i class="mdi mdi-menu"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<ul class="sidenav" id="mobile-navi">
+    <li class="user-view">
+        
+    </li>
+    <li><a href="/">Главная</a></li>
+    <li><a href="/gallery.html">Галерея</a></li>
+    <li><a href="/authors.html">Авторы</a></li>
+    <li class="folder">
+        <a>Мероприятия</a>
+        <ul>
+            <li><a href="">Выставки</a></li>
+            <li><a href="">Аукционы</a></li>
+            <li><a href="">Мастерклассы</a></li>
+        </ul>
+    </li>
+</ul>
+    <div class="global-wrapper" id="profile">
+        <section id="profile-data">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col s12">
+                        <h1>Личный кабинет</h1>
+                    </div>
+                    <div class="col m2 s4">
+                        <div class="avatar-wrapper">
+                            <input type="file" id="avatar-selector">
+                            <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=16"></div>
+                            <label for="avatar-selector">
+                                <i class="mdi mdi-camera"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col m4 s8">
+                        <div class="kv-wrapper">
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Страна</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="Россия"></div>
+                            </div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Город</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="Краснодар"></div>
+                            </div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Фамилия</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="Кононович"></div>
+                            </div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Имя</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="Ольга"></div>
+                            </div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Отчество</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="Владимировна"></div>
+                            </div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Дата рождения</div>
+                                </div>
+                                <div class="value">
+                                    <span>12 декабря 2020</span>
+                                    <a class="datepicker hidden gold-text" id="birthday-trigger"><i class="mdi mdi-calendar"></i></a>
+                                    <input type="hidden" name="birthday">
+                                </div>
+                            </div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Дата регистрации</div>
+                                </div>
+                                <div class="value">
+                                    <span>12 декабря 2020</span>
+                                    <a class="datepicker hidden gold-text" id="registered-trigger"><i class="mdi mdi-calendar"></i></a>
+                                    <input type="hidden" name="birthday">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m6 s12">
+                        <textarea class="hidden-input">Франсиско Хосе де Гойя-и-Лусьентес (исп. Francisco José de Goya y Lucientes; 30 марта 1746, Фуэндетодос, близ Сарагосы — 16 апреля 1828, Бордо) — испанский художник и гравёр, один из первых и наиболее ярких мастеров изобразительного искусства эпохи романтизма.</textarea>
+                    </div>
+                    <div class="col s12 right-align">
+                        <a href="" class="btn btn-flat">Изменить <span class="gold-text">пароль</span></a>
+                        <a href="" class="btn" id="saver">Редактировать <span class="gold-text">профиль</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tools">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab"><a class="active" href="#images">Управление работами</a></li>
+                            <li class="tab disabled"><a href="#events">Мероприятия</a></li>
+                            <li class="tab disabled"><a href="#notifications">Уведомления</a></li>
+                            <li class="tab"><a href="#communications">Общение</a></li>
+                            <li class="tab disabled"><a href="#recycle">Корзина</a></li>
+                        </ul>
+                        <div id="images">
+                            <div class="row">
+                                <div class="col l8 m12 s12">
+                                    <div class="profile-gallery-wrapper sortable-wrapper">
+                                        <div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/belle.jpg"></div>
+    </div>
+    <div class="name">Утро</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">100x60x3 см</div>
+    <div class="price">12 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/blue-flower.jpg"></div>
+    </div>
+    <div class="name">Папоротник</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">60x100x3 см</div>
+    <div class="price">8 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/flower-infinity.jpg"></div>
+    </div>
+    <div class="name">Абстракция</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">100x60x3 см</div>
+    <div class="price">4 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/friday-evening.jpg"></div>
+    </div>
+    <div class="name">Портрет баронессы</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">60x100x3 см</div>
+    <div class="price">80 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/kitty.jpg"></div>
+    </div>
+    <div class="name">Колесо обозрения</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">100x60x3 см</div>
+    <div class="price">12 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/lime.jpg"></div>
+    </div>
+    <div class="name">На мосту</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">60x100x3 см</div>
+    <div class="price">14 000₽</div>
+</div><div class="profile-gallery-entry selected">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/lotus.jpg"></div>
+    </div>
+    <div class="name">Еще абстракция</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">100x60x3 см</div>
+    <div class="price">3 500₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/mistery_island.jpg"></div>
+    </div>
+    <div class="name">Око</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">60x100x3 см</div>
+    <div class="price">12 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/narcis.jpg"></div>
+    </div>
+    <div class="name">Жук</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">60x100x3 см</div>
+    <div class="price">3 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/naturemort.jpg"></div>
+    </div>
+    <div class="name">Зимний двор</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">100x60x3 см</div>
+    <div class="price">4 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/piano.jpg"></div>
+    </div>
+    <div class="name">Приплыли</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">60x100x3 см</div>
+    <div class="price">6 000₽</div>
+</div><div class="profile-gallery-entry ">
+    <div class="drag-handler"><i class="mdi mdi-drag-vertical"></i></div>
+    <div class="thumbnail">
+        <div class="lazy" data-src="/img/gallery/pomegranate.jpg"></div>
+    </div>
+    <div class="name">Птах</div>
+    <div class="date">12 апреля 2021</div>
+    <div class="size">100x60x3 см</div>
+    <div class="price">6 000₽</div>
+</div>
+                                    </div>
+                                </div>
+                                <div class="col m4 editor">
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <div class="lazy editor-image" data-src="/img/gallery/mistery_island.jpg">
+                                                <div class="overlay">
+                                                    <div class="actions">
+                                                        <a href=""><i class="mdi mdi-crop-rotate"></i></a>
+                                                        <a href=""><i class="mdi mdi-delete"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <div class="section-header">Общие сведения</div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="text" value="Таинственный остров" placeholder="Название картины">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Название картины</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="text" value="12 000" placeholder="Цена">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Цена</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="text" value="Фотография" placeholder="Стилистика">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Стилистика</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="text" value="Фотография" placeholder="Техника">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Техника</label>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <div class="chips">
+                                                <input type="text" placeholder="Теги">
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <div class="section-header">Технические характеристики</div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="number" value="60" placeholder="Ширина (см)">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Ширина (см)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="number" value="100" placeholder="Высота (см)">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Высота (см)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="number" value="3" placeholder="Глубина (см)">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Глубина (см)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 s12">
+                                            <div class="input-field">
+                                                <input type="text" value="Акрил" placeholder="Материал">
+                                                <div class="error">Текст ошибки</div>
+                                                <label for="">Материал</label>
+                                            </div>
+                                        </div>
+                                        <div class="col s12">
+                                            <div class="entry-actions">
+                                                <a href="" class="btn btn-flat"><span class="red-text">Удалить</span></a>
+                                                <a href="" class="btn btn right">Сохранить</a>
+                                                <a href="" class="btn btn-flat right">Поделиться</a>
+                                                <hr>
+                                                <div class="center-align"><a href="" class="btn btn-large">Загрузить новую работу</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sidenav" id="gallery-editor">
+                                    <li>
+                                        <div class="image-editor lazy" data-src="/img/gallery/mistery_island.jpg">                                        
+                                            <div class="overlay">
+                                                <div class="actions">
+                                                    <a href=""><i class="mdi mdi-crop-rotate"></i></a>
+                                                    <a href=""><i class="mdi mdi-delete"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Название картины" value="Таинственный остров" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Название картины</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Цена" value="12 000" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Цена</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Стилистика" value="Фотография" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Стилистика</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Теххника" value="Фотография" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Теххника</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chips"><input type="text"></div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="number" placeholder="Ширина (см)" value="60" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Ширина (см)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="number" placeholder="Высота (см)" value="100" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Высота (см)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="number" placeholder="Глубина (см)" value="3" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Глубина (см)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Материал" value="Акрил" class="styled">
+                                            <div class="error"></div>
+                                            <label for="">Материал</label>
+                                        </div>
+                                    </li>
+                                    <li class="editor-actions">
+                                        <a href="" class="red-text"><i class="mdi mdi-delete"></i></a>
+                                        <a href=""><i class="mdi mdi-share-variant"></i></a>
+                                        <a href=""><i class="mdi mdi-content-save"></i></a>
+                                        <a href=""><i class="mdi mdi-cloud-upload"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="events">2</div>
+                        <div id="notifications">3</div>
+                        <div id="communications">
+                            <div class="row">
+                                <div class="col l8 m12 s12">
+                                    <div class="messaging-wrapper">
+                                        <div class="communications-header">
+                                            <div class="header">Переписка</div>
+                                            <div class="actions">
+                                                <a><i class="mdi mdi-magnify"></i></a>
+                                                <a><i class="mdi mdi-dots-vertical"></i></a>
+                                                <a class="sidenav-trigger" href="#chat-sidenav"><i class="mdi mdi-menu"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="messages-wrapper">
+                                            <div class="message foreign">
+    <div class="message-body">Добрый вечер! Очень классные картины! Подскажите пожалуйста, в среднем, сколько по времени Вы пишите картину?</div>
+    <div class="message-footer">
+        <div class="message-author">Кудряшка Сью</div>
+        <div class="message-date">12 апреля 2020г. 14:00</div>
+    </div>
+</div><div class="message ">
+    <div class="message-body">Здравствуйте! Трудно сказать – всё зависит от сложности картины. Ну и размеров само собой. А какой размер Вас интересует?</div>
+    <div class="message-footer">
+        <div class="message-author">я</div>
+        <div class="message-date">12 апреля 2020г. 14:00</div>
+    </div>
+</div><div class="message foreign">
+    <div class="message-body">В районе метр на полтора. Тематика – абстракция на Ваш вкус))</div>
+    <div class="message-footer">
+        <div class="message-author">Кудряшка Сью</div>
+        <div class="message-date">12 апреля 2020г. 14:00</div>
+    </div>
+</div><div class="message ">
+    <div class="message-body">Спасибо за доверие)). Что касается сроков – пару дней.</div>
+    <div class="message-footer">
+        <div class="message-author">я</div>
+        <div class="message-date">12 апреля 2020г. 14:00</div>
+    </div>
+</div><div class="message foreign">
+    <div class="message-body">Круто! Тогда считайте, что у Вас появился заказ!))</div>
+    <div class="message-footer">
+        <div class="message-author">Кудряшка Сью</div>
+        <div class="message-date">12 апреля 2020г. 14:00</div>
+    </div>
+</div>
+                                        </div>
+                                        <ul class="sidenav" id="chat-sidenav">
+                                            <div class="messages-authors-wrapper">
+                                                <li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=1"></div>
+    </div>
+    <div class="name-wrapper">Ольга Кононович</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=2"></div>
+    </div>
+    <div class="name-wrapper">Настасья Лью</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=3"></div>
+    </div>
+    <div class="name-wrapper">Екатерина Сапельникова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=4"></div>
+    </div>
+    <div class="name-wrapper">Евгений Костин</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=5"></div>
+    </div>
+    <div class="name-wrapper">Антонина Павлова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=6"></div>
+    </div>
+    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=7"></div>
+    </div>
+    <div class="name-wrapper">Ольга Кононович</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=8"></div>
+    </div>
+    <div class="name-wrapper">Настасья Лью</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=9"></div>
+    </div>
+    <div class="name-wrapper">Екатерина Сапельникова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=10"></div>
+    </div>
+    <div class="name-wrapper">Евгений Костин</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=11"></div>
+    </div>
+    <div class="name-wrapper">Антонина Павлова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li><li class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=12"></div>
+    </div>
+    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</li>
+                                            </div>
+                                        </ul>
+                                        <div class="communications-footer">
+                                            <div class="input-field">
+                                                <input type="text" placeholder="Текст сообщения">
+                                                <label for="">Текст сообщения</label>
+                                                <a href=""><span class="mdi mdi-send"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col m4">
+                                    <div class="contacts">
+                                        <div class="messages-authors-header">
+                                            <div class="header">Контакты</div>
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Поиск">
+                                            <label for="">Поиск</label>
+                                        </div>
+                                        <div class="messages-authors-wrapper">
+                                            <div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=1"></div>
+    </div>
+    <div class="name-wrapper">Ольга Кононович</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=2"></div>
+    </div>
+    <div class="name-wrapper">Настасья Лью</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=3"></div>
+    </div>
+    <div class="name-wrapper">Екатерина Сапельникова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=4"></div>
+    </div>
+    <div class="name-wrapper">Евгений Костин</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=5"></div>
+    </div>
+    <div class="name-wrapper">Антонина Павлова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=6"></div>
+    </div>
+    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=7"></div>
+    </div>
+    <div class="name-wrapper">Ольга Кононович</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=8"></div>
+    </div>
+    <div class="name-wrapper">Настасья Лью</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=9"></div>
+    </div>
+    <div class="name-wrapper">Екатерина Сапельникова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=10"></div>
+    </div>
+    <div class="name-wrapper">Евгений Костин</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=11"></div>
+    </div>
+    <div class="name-wrapper">Антонина Павлова</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div><div class="message-author">
+    <div class="avatar-wrapper">
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=12"></div>
+    </div>
+    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="actions">
+        <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
+        <a href=""><i class="mdi mdi-message"></i></a>
+    </div>
+</div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts-footer">
+                                        <a href="" class="btn">Добавить <span class="gold-text">контакт</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="recycle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+    <div class="container">
+        <div class="logo-wrapper">
+            <div class="logo"></div>
+        </div>
+        <div class="footer-main">
+            <div class="row">
+                <div class="col m4">
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Галерея</a></li>
+                        <li><a href="">Авторы</a></li>
+                        <li><a href="">Мероприятия</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                        <li><a href="">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+                <div class="col m8 s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="form-header">Обратная связь</div>
+                        </div>
+                        <div class="col m6 s12">
+                            <div class="input-field">
+                                <input type="text" placeholder="Имя, Фамилия">
+                                <div class="error">Недопустимые символы в имени</div>
+                                <label for="">Пожалуйста представьтесь</label>
+                            </div>
+                        </div>
+                        <div class="col m6 s12">
+                            <div class="input-field">
+                                <input type="text" placeholder="+7 123 456-7890">
+                                <div class="error">Неверный формат</div>
+                                <label for="">Телефон</label>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field">
+                                <textarea name="" id="" cols="30" rows="0" placeholder="Что Вас интересует?"></textarea>
+                                <div class="error">Поле не должно быть пустым</div>
+                                <label for="">Сообщение</label>
+                            </div>
+                            <div class="buttons-wrapper">
+                                <a href="" class="btn"><span class="white-text">Отправить</span><span class="gold-text"> сообщение</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/master.js"></script>
+    <div class="searcher">
+    <div class="form-wrapper">
+        <div class="input-field"><input type="text" placeholder="Например, название картины"><label for="">Поиск</label></div>
+        <div class="buttons">
+            <a class="btn btn-flat close-search">Закрыть</a>
+            <a class="btn right">Поиск</a>
+        </div>
+    </div>
+</div>
+<div class="modal" id="login">
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12">
+                <div class="modal-header">Авторизация</div>
+            </div>
+            <div class="col s12">
+                <div class="input-field">
+                    <input type="text" class="styled" placeholder="Имя пользователя">
+                    <div class="error">Пользователь не найден</div>
+                    <label for="">Логин</label>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="input-field">
+                    <input type="text" class="styled" placeholder="Пароль, указанный при регистрации">
+                    <div class="error">Неверный пароль</div>
+                    <label for="Пароль">Пароль</label>
+                </div>
+            </div>
+            <div class="col s12">
+                <ul>
+                    <li>
+                        <a href=""><span class="gold-text">Уже есть аккаунт</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="gold-text">Забыли пароль?</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12">
+                <div class="input-field-check">
+                    <input type="checkbox" id="remember" class="styled">
+                    <label for="remember">Запомнить меня</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-actions">
+            <a class="btn btn-flat modal-close">Закрыть</a>
+            <a href="/profile.html" class="btn right">Войти</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

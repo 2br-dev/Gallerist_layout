@@ -3,6 +3,7 @@
     padding-top: 15px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
+    // display: flex;
 
     & textarea,
     & input{
@@ -78,6 +79,82 @@
         &:checked ~ label:before{
             color: $gold;
             background: black;
+        }
+    }
+}
+
+input,
+textarea{
+
+    &.hidden-input{
+        background: transparent;
+        border: 1px solid transparent;
+        line-height: 20px;
+        cursor: text;
+        pointer-events: none;
+        resize: none;
+
+        &:focus{
+            outline: none;
+        }
+
+        &.obvious{
+            background: #fff;
+            border: 1px solid #ccc;
+            pointer-events: all;
+            resize: vertical;
+        }
+    }
+}
+
+.datepicker-container{
+
+    & .datepicker-date-display{
+        background: $text;
+    }
+
+    & .select-wrapper{
+    
+        & input.select-dropdown{
+    
+            border-bottom: 0;
+            
+            &:focus{
+                
+                border-bottom: 0;
+            }
+        }        
+    }
+
+    & .datepicker-table-wrapper{
+
+        & table.datepicker-table{
+
+            & tr.datepicker-row{
+    
+                & td.is-today{
+        
+                    & button{
+                        color: $gold;
+                    }
+                }
+
+                & td.is-selected{
+
+                    & button{
+                        background-color: $gold;
+                    }
+                }
+            }
+        }
+    }
+
+    & .datepicker-footer{
+
+        & button{
+            @extend .btn;
+            margin-left: 10px;
+            margin-bottom: 10px;
         }
     }
 }

@@ -1,6 +1,36 @@
 $offset: 30px;
 
 body{
+
+    & .hidden{
+        display: none;
+        pointer-events: none;
+    }
+
+    color: $text;
+
+    & .kv-pair{
+        display: table-row;
+
+        & .key, & .value{
+            display: table-cell;
+        }
+    }
+
+    & .tabs{
+        background: transparent;
+
+        & .tab a {
+            color: $text;
+        }
+    }
+
+    & .fogged{
+        color: lighten($text, 50);
+    }
+
+    background-color: $paper;
+
     h1, h2, h3{
         font-family: 'Lora';
         font-weight: 700;
@@ -47,8 +77,19 @@ body{
             font-size: 28px;
         }
     }
+
     a{
         cursor: pointer;
+
+        &:not(.btn){
+            color: $gold;
+        }
+    }
+
+    & hr{
+        border: 0;
+        border-bottom: 1px solid $fogged;
+        margin: 40px 0;
     }
 
     section{
