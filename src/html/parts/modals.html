@@ -1,6 +1,6 @@
 <div class="searcher">
     <div class="form-wrapper">
-        <div class="input-field"><input type="text" placeholder="Например, название картины"><label for="">Поиск</label></div>
+        <div class="input-field"><input class="styled" type="text" placeholder="Например, название картины"><label for="">Поиск</label></div>
         <div class="buttons">
             <a class="btn btn-flat close-search">Закрыть</a>
             <a class="btn right">Поиск</a>
@@ -47,6 +47,22 @@
         <div class="modal-actions">
             <a class="btn btn-flat modal-close">Закрыть</a>
             <a href="/profile.html" class="btn right">Войти</a>
+        </div>
+    </div>
+</div>
+<div id="city-selector" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">Выбор города</div>
+        <div class="input-field">
+            <input type="text" id="regions" placeholder="Например, Краснодарский край" class="autocomplete styled">
+            <label for="">Укажите регион</label>
+        </div>
+        <div class="input-field">
+            <input type="text" id="cities" placeholder="Например, Краснодар" class="autocomplete styled">
+            <label for="">Укажите город</label>
+        </div>
+        <div class="modal-actions">
+            <a href="" class="btn btn-flat">Закрыть</a><a href="" class="btn btn right">Принять</a>
         </div>
     </div>
 </div>

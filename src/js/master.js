@@ -8,7 +8,9 @@ var
     sortable,
     naviSidenav,
     editorSidenav,
-    chatSidenav;
+    chatSidenav,
+    regions,
+    cities;
 var editMode = "view";
 
 $(() => {
@@ -214,6 +216,17 @@ function init(){
     $('.chips').chips();
 
     updateFooterHeight();
+
+    // Заполнение регионов
+    $.ajax({
+        url: "/js/regions.json",
+        dataType: "JSON",
+        success: function(data){
+            regions = M.Autocomplete.init(document.querySelector('#regions'), {
+                data: data
+            })
+        }
+    })
 }
 
 function toggleEdit(e){

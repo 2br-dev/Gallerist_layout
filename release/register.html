@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/master.css">
+<title>Страница регистрации</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="/" class="logo"></a>
+        <ul class="nav-menu">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/gallery.html">Галерея</a></li>
+            <li><a href="/authors.html">Авторы</a></li>
+            <li>
+                <a href="" class="events">Мероприятия</a>
+                <ul>
+                    <li><a href="">Выставки</a></li>
+                    <li><a href="">Аукционы</a></li>
+                    <li><a href="">Мастерклассы</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <!-- Неавторизованный пользователь -->
+            <div class="hidden">
+                <a href="#login" class="btn btn-small modal-trigger">
+                    <span class="white-text">Войти</span>
+                </a>
+            </div>
+            <!-- / -->
+            <!-- Авторизованный пользователь -->
+            <ul class="profile-menu">
+                <li>
+                    <i class="mdi mdi-account-circle"></i>
+                </li>
+                <li>
+                    <ul class="profile-menu-inner">
+                        <li><a href="/profile.html">Профиль</a></li>
+                        <li><a href="/">Выход</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- / -->
+            <a class="search-trigger"><i class="mdi mdi-magnify"></i></a>
+        </div>
+        <div class="burger-wrapper">
+            <a href="#mobile-navi" class="sidenav-trigger">
+                <i class="mdi mdi-menu"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+<ul class="sidenav" id="mobile-navi">
+    <li class="user-view">
+        
+    </li>
+    <li><a href="/">Главная</a></li>
+    <li><a href="/gallery.html">Галерея</a></li>
+    <li><a href="/authors.html">Авторы</a></li>
+    <li class="folder">
+        <a>Мероприятия</a>
+        <ul>
+            <li><a href="">Выставки</a></li>
+            <li><a href="">Аукционы</a></li>
+            <li><a href="">Мастерклассы</a></li>
+        </ul>
+    </li>
+</ul>
+    <div class="global-wrapper" id="register">
+        <section id="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Регистрация пользователя</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="form-data">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 m6 s12">
+                        <form action="" id="register">
+                            <div class="input-field-check"><input class="styled" checked type="radio" name="profile-type" id="artist"><label for="artist">Художник</label></div>
+                            <div class="input-field-check"><input class="styled" type="radio" name="profile-type" id="customer"><label for="customer">Покупатель</label></div>
+                            <div><a href="#city-selector" class="btn btn-flat modal-trigger" id="city-selector-trigger">Выбрать город</a></div>
+                            <div class="input-field"><input class="styled" type="text" placeholder="Фамилия"><label for="">Фамилия</label></div>
+                            <div class="input-field"><input class="styled" type="text" placeholder="Имя"><label for="">Имя</label></div>
+                            <div class="input-field"><input class="styled" type="text" placeholder="Отество"><label for="">Отество</label></div>
+                            <div class="input-field"><input class="styled" type="text" placeholder="Телефон"><label for="">Телефон</label></div>
+                            <div class="input-field"><input class="styled" type="text" placeholder="E-mail"><label for="">E-mail</label></div>
+                            <div class="input-field-check"><input class="styled" type="checkbox" id="agreement"><label for="agreement">Я прочел, и согласен с условиями <a href="">Пользовательского соглашения</a></label></div>
+                            <div class="input-field-check"><input class="styled" type="checkbox" id="policy"><label for="policy">Я прочел, и согласен с <a href="">Политикой обработки персональных данных</a></label></div>
+                            <div class="input-field-check"><input class="styled" type="checkbox" id="rules"><label for="rules">Я прочел, и согласен с <a href="">Правилами пользования сайтом</a></label></div>
+                            <div>
+                                <input type="reset" class="btn btn-flat" value="Сброс" />
+                                <a href="" class="btn right">Зарегистрироваться</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col l6 offset-l2 m6 s12">
+                        <h3>Для чего нужна регистрация?</h3>
+                        <p>
+                            Регистрируясь на сайте, пользователь получает уникальную возможность как общаться напрямую с авторами картин, представленных 
+                            на сайте, так и самому зарегистрировавшись в качестве автора, выкладывать свои работы, общаться с авторами других картин, 
+                            отслеживать их процесс, появление новых работ и многое другое. 
+                        </p>
+                        <p>
+                            Зарегистрировавшись в качестве покупателя, пользователь имеет возможность связаться с автором по вопросу приобретения 
+                            понравившейся картины, либо попросить автора нарисовать картину на заказ, получив таким образом абсолютный эксклюзив,
+                            как для себя, так и в качестве подарка своим близким и родным людям.
+                        </p>
+                        <p>
+                            Человек, зарегистрировавшийся на сайте получает множество прав, но вместе с ними и множество обязанностей, в частности,
+                            он должен принять <a href="">Политику обработки персональных данных</a>, <a href="">Пользовательское соглашение</a>,
+                            и <a href="">Правила пользования сайтом</a>, соблюдать нормы приличия, не оскорблять других пользователей сайта,
+                            не заниматься рассылкой СПАМ'а и не флудить.
+                        </p>
+                        <p>
+                            Замеченные в подобного рода деятельности будут лишены доступа к сайту, и заблокированы после несоблюдения первого предупреждения со стороны Администрации
+                            сайта, и потеряют доступ к личному кабинету, а как следствие ко всей истории переписок, своим работам, и прочими удобствами,
+                            предоставляемыми личным кабинетом в срок, определяемой Администрацией.
+                        </p>
+                        <p>
+                            Для восстановления доступа к сайту, пользователю будет необходимо связаться с Администрацией сайта, и восстановить доступ
+                            после того, как будут устранены как сами неприемлимые действия, так и их последствия. В дальнейшем Администрация оставляет за собой
+                            право перманентного удаления личных данных пользователей, злостно нарушающих правила пользования сайтом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+    <div class="container">
+        <div class="logo-wrapper">
+            <div class="logo"></div>
+        </div>
+        <div class="footer-main">
+            <div class="row flex">
+                <div class="col m4">
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Галерея</a></li>
+                        <li><a href="">Авторы</a></li>
+                        <li><a href="">Мероприятия</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                        <li><a href="">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+                <div class="col m8 s12">
+                    <!-- Данные еще не отправлены -->
+                    <div class="row hidden">
+                        <div class="col s12">
+                            <div class="form-header">Обратная связь</div>
+                        </div>
+                        <div class="col m6 s12">
+                            <div class="input-field">
+                                <input type="text" placeholder="Имя, Фамилия">
+                                <div class="error">Недопустимые символы в имени</div>
+                                <label for="">Пожалуйста представьтесь</label>
+                            </div>
+                        </div>
+                        <div class="col m6 s12">
+                            <div class="input-field">
+                                <input type="text" placeholder="+7 123 456-7890">
+                                <div class="error">Неверный формат</div>
+                                <label for="">Телефон</label>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field">
+                                <textarea name="" id="" cols="30" rows="0" placeholder="Что Вас интересует?"></textarea>
+                                <div class="error">Поле не должно быть пустым</div>
+                                <label for="">Сообщение</label>
+                            </div>
+                            <div class="buttons-wrapper">
+                                <a href="" class="btn"><span class="white-text">Отправить</span><span class="gold-text"> сообщение</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / -->
+                    <!-- Данные успешно отправлены -->
+                    <div class="footer-success center-align">
+                        <p>
+                            <i class="mdi mdi-check-circle green-text"></i>
+                        </p>
+                        <p>Ваше сообщение успешно отправлено</p>
+                    </div>
+                    <!-- / -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/master.js"></script>
+    <div class="searcher">
+    <div class="form-wrapper">
+        <div class="input-field"><input class="styled" type="text" placeholder="Например, название картины"><label for="">Поиск</label></div>
+        <div class="buttons">
+            <a class="btn btn-flat close-search">Закрыть</a>
+            <a class="btn right">Поиск</a>
+        </div>
+    </div>
+</div>
+<div class="modal" id="login">
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12">
+                <div class="modal-header">Авторизация</div>
+            </div>
+            <div class="col s12">
+                <div class="input-field">
+                    <input type="text" class="styled" placeholder="Имя пользователя">
+                    <div class="error">Пользователь не найден</div>
+                    <label for="">Логин</label>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="input-field">
+                    <input type="text" class="styled" placeholder="Пароль, указанный при регистрации">
+                    <div class="error">Неверный пароль</div>
+                    <label for="Пароль">Пароль</label>
+                </div>
+            </div>
+            <div class="col s12">
+                <ul>
+                    <li>
+                        <a href=""><span class="gold-text">Уже есть аккаунт</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="gold-text">Забыли пароль?</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12">
+                <div class="input-field-check">
+                    <input type="checkbox" id="remember" class="styled">
+                    <label for="remember">Запомнить меня</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-actions">
+            <a class="btn btn-flat modal-close">Закрыть</a>
+            <a href="/profile.html" class="btn right">Войти</a>
+        </div>
+    </div>
+</div>
+<div id="city-selector" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">Выбор города</div>
+        <div class="input-field">
+            <input type="text" id="regions" placeholder="Например, Краснодарский край" class="autocomplete styled">
+            <label for="">Укажите регион</label>
+        </div>
+        <div class="input-field">
+            <input type="text" id="cities" placeholder="Например, Краснодар" class="autocomplete styled">
+            <label for="">Укажите город</label>
+        </div>
+        <div class="modal-actions">
+            <a href="" class="btn btn-flat">Закрыть</a><a href="" class="btn btn right">Принять</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

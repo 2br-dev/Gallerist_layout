@@ -144,19 +144,74 @@ header{
 
         & .nav-actions{
 
+            padding-right: 20px;
+
             & a{
-                margin-left: 20px;
+
+                display: inline-block;
 
                 &.search-trigger{
                     color: $gold;
                     line-height: 52px;
                     font-size: 21px;
+                    padding: 0 10px;
+                }
+            }
+
+            & .profile-menu{
+
+                margin: 0;
+                display: inline-block;
+        
+                & > li{
+                    
+                    position: relative;
+                    padding: 0 10px;
+                    
+                    & i{
+                        line-height: 54px;
+                        color: $gold;
+                        font-size: 21px;
+                        line-height: 52px;
+                    }
+        
+                    & span{
+                        display: inline-block;
+                    }
+        
+                    & .profile-menu-inner{
+                        position: absolute;
+                        top: calc(100% - 20px);
+                        right: 0;
+                        opacity: 0;
+                        transition: opacity .2s, top .2s;
+                        pointer-events: none;
+                        background: #fff;
+                        z-index: 6;
+                        box-shadow: 0 2px 6px rgba(black, .4);
+                        border-radius: 4px;
+                        overflow: hidden;
+
+                        & li{
+                            
+                            & a{
+                                line-height: 40px;
+                                padding: 0 20px;
+
+                                display: block;
+
+                                &:hover{
+                                    background: #f3f3f3;
+                                }
+                            }
+                        }
+                    }
                 }
 
-                &.btn{
-                    display: inline-block;
-                    transform: translateY(7px);
-                    margin-right: 20px;
+                &:hover .profile-menu-inner{
+                    top: 100%;
+                    opacity: 1;
+                    pointer-events: all;
                 }
             }
 

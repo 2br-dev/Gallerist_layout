@@ -3,7 +3,6 @@
     padding-top: 15px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
-    // display: flex;
 
     & textarea,
     & input{
@@ -13,37 +12,54 @@
         width: 100%;
         background: transparent;
 
-        &:focus{
-            outline: none;
-        }
+        &.styled{
 
-        &::placeholder{
-            color: transparent;
-        }
-
-        & ~ label{
-            position: absolute;
-            z-index: 2;
-            pointer-events: none;
-            top: 18px;
-            left: 0px;
-            font-size: 16px;
-            transition: font-size .2s, top .2s;
-        }
-
-        &:not(:placeholder-shown), &:focus{
-
+            &:focus{
+                outline: none;
+            }
+    
             &::placeholder{
-                color: rgba(black, .2);
+                color: transparent;
+            }
+    
+            & ~ label{
+                position: absolute;
+                z-index: 2;
+                pointer-events: none;
+                top: 18px;
+                left: 0px;
+                font-size: 16px;
+                transition: font-size .2s, top .2s;
+            }
+    
+            &:not(:placeholder-shown), &:focus{
+    
+                &::placeholder{
+                    color: rgba(black, .2);
+                }
+    
+                & ~ label{
+                    top: 0;
+                    font-size: 12px;
+                }
             }
 
-            & ~ label{
-                top: 0;
-                font-size: 12px;
+            &.autocomplete + ul{
+                
+                & li{
+                    & span{
+                        color: $text;
+
+                        & .highlight{
+                            color: $gold;
+                        }
+                    }
+                }
             }
         }
 
     }
+
     & .error{
         font-size: 12px;
         position: absolute;
@@ -56,6 +72,8 @@
 
 .input-field-check{
 
+    display: inline-block;
+
     & input[type=checkbox].styled{
         display: none;
 
@@ -63,22 +81,60 @@
 
             user-select: none;
             cursor: pointer;
+            padding-right: 20px;
+            margin: 10px 0;
+            display: inline-block;
             
             &:before{
 
                 content: "\F012C";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
                 font-family: 'Material Design Icons';
                 margin-right: 6px;
                 box-shadow: 0 0 0 1px black;
                 transition: color .2s, background-color .2s;
                 background: #fff;
                 color: transparent;
+                line-height: 14px;
             }
         }
 
         &:checked ~ label:before{
             color: $gold;
             background: black;
+        }
+    }
+
+    & input[type=radio].styled{
+        display: none;
+
+        & ~ label{
+
+            user-select: none;
+            cursor: pointer;
+            display: inline-block;
+            padding-right: 20px;
+            margin: 10px 0;
+            
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                margin-right: 6px;
+                box-shadow: 0 0 0 1px black;
+                transition: box-shadow .4s;
+                background: #fff;
+                color: transparent;
+                transform: translateY(2px);
+            }
+        }
+
+        &:checked ~ label:before{
+            box-shadow: 0 0 0 1px black, 0 0 0 3px white inset, 0 0 0 10px black inset;
         }
     }
 }
@@ -157,4 +213,8 @@ textarea{
             margin-bottom: 10px;
         }
     }
+}
+
+.sidenav .input-field{
+    line-height: 1.5rem;
 }

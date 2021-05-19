@@ -15,10 +15,27 @@
             </li>
         </ul>
         <div class="nav-actions">
+            <!-- Неавторизованный пользователь -->
+            <div class="hidden">
+                <a href="#login" class="btn btn-small modal-trigger">
+                    <span class="white-text">Войти</span>
+                </a>
+            </div>
+            <!-- / -->
+            <!-- Авторизованный пользователь -->
+            <ul class="profile-menu">
+                <li>
+                    <i class="mdi mdi-account-circle"></i>
+                </li>
+                <li>
+                    <ul class="profile-menu-inner">
+                        <li><a href="/profile.html">Профиль</a></li>
+                        <li><a href="/">Выход</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- / -->
             <a class="search-trigger"><i class="mdi mdi-magnify"></i></a>
-            <a href="#login" class="btn btn-small modal-trigger">
-                <span class="white-text">Войти</span>
-            </a>
         </div>
         <div class="burger-wrapper">
             <a href="#mobile-navi" class="sidenav-trigger">

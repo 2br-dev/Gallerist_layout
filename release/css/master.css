@@ -4079,6 +4079,31 @@ footer {
       text-align: right;
       margin: 20px 0;
       display: block; }
+    footer .container .footer-success {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 0; }
+      footer .container .footer-success i {
+        font-size: 48px;
+        display: inline-block;
+        position: relative;
+        line-height: 48px; }
+        footer .container .footer-success i:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, calc(-50% + 1px));
+          width: 39px;
+          height: 39px;
+          border-radius: 50%;
+          background: #fff;
+          z-index: -1; }
+      footer .container .footer-success p {
+        color: #fff;
+        margin: 6px 0; }
 
 .container {
   margin: 0 auto;
@@ -5072,14 +5097,14 @@ footer {
     line-height: 30px;
     width: 100%;
     background: transparent; }
-    .input-field textarea:focus,
-    .input-field input:focus {
+    .input-field textarea.styled:focus,
+    .input-field input.styled:focus {
       outline: none; }
-    .input-field textarea::placeholder,
-    .input-field input::placeholder {
+    .input-field textarea.styled::placeholder,
+    .input-field input.styled::placeholder {
       color: transparent; }
-    .input-field textarea ~ label,
-    .input-field input ~ label {
+    .input-field textarea.styled ~ label,
+    .input-field input.styled ~ label {
       position: absolute;
       z-index: 2;
       pointer-events: none;
@@ -5087,15 +5112,21 @@ footer {
       left: 0px;
       font-size: 16px;
       transition: font-size .2s, top .2s; }
-    .input-field textarea:not(:placeholder-shown)::placeholder, .input-field textarea:focus::placeholder,
-    .input-field input:not(:placeholder-shown)::placeholder,
-    .input-field input:focus::placeholder {
+    .input-field textarea.styled:not(:placeholder-shown)::placeholder, .input-field textarea.styled:focus::placeholder,
+    .input-field input.styled:not(:placeholder-shown)::placeholder,
+    .input-field input.styled:focus::placeholder {
       color: rgba(0, 0, 0, 0.2); }
-    .input-field textarea:not(:placeholder-shown) ~ label, .input-field textarea:focus ~ label,
-    .input-field input:not(:placeholder-shown) ~ label,
-    .input-field input:focus ~ label {
+    .input-field textarea.styled:not(:placeholder-shown) ~ label, .input-field textarea.styled:focus ~ label,
+    .input-field input.styled:not(:placeholder-shown) ~ label,
+    .input-field input.styled:focus ~ label {
       top: 0;
       font-size: 12px; }
+    .input-field textarea.styled.autocomplete + ul li span,
+    .input-field input.styled.autocomplete + ul li span {
+      color: #333; }
+      .input-field textarea.styled.autocomplete + ul li span .highlight,
+      .input-field input.styled.autocomplete + ul li span .highlight {
+        color: #AA9859; }
   .input-field .error {
     font-size: 12px;
     position: absolute;
@@ -5103,22 +5134,53 @@ footer {
     color: #c3a640;
     pointer-events: none; }
 
-.input-field-check input[type=checkbox].styled {
-  display: none; }
-  .input-field-check input[type=checkbox].styled ~ label {
-    user-select: none;
-    cursor: pointer; }
-    .input-field-check input[type=checkbox].styled ~ label:before {
-      content: "\F012C";
-      font-family: 'Material Design Icons';
-      margin-right: 6px;
-      box-shadow: 0 0 0 1px black;
-      transition: color .2s, background-color .2s;
-      background: #fff;
-      color: transparent; }
-  .input-field-check input[type=checkbox].styled:checked ~ label:before {
-    color: #AA9859;
-    background: black; }
+.input-field-check {
+  display: inline-block; }
+  .input-field-check input[type=checkbox].styled {
+    display: none; }
+    .input-field-check input[type=checkbox].styled ~ label {
+      user-select: none;
+      cursor: pointer;
+      padding-right: 20px;
+      margin: 10px 0;
+      display: inline-block; }
+      .input-field-check input[type=checkbox].styled ~ label:before {
+        content: "\F012C";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        font-family: 'Material Design Icons';
+        margin-right: 6px;
+        box-shadow: 0 0 0 1px black;
+        transition: color .2s, background-color .2s;
+        background: #fff;
+        color: transparent;
+        line-height: 14px; }
+    .input-field-check input[type=checkbox].styled:checked ~ label:before {
+      color: #AA9859;
+      background: black; }
+  .input-field-check input[type=radio].styled {
+    display: none; }
+    .input-field-check input[type=radio].styled ~ label {
+      user-select: none;
+      cursor: pointer;
+      display: inline-block;
+      padding-right: 20px;
+      margin: 10px 0; }
+      .input-field-check input[type=radio].styled ~ label:before {
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 6px;
+        box-shadow: 0 0 0 1px black;
+        transition: box-shadow .4s;
+        background: #fff;
+        color: transparent;
+        transform: translateY(2px); }
+    .input-field-check input[type=radio].styled:checked ~ label:before {
+      box-shadow: 0 0 0 1px black, 0 0 0 3px white inset, 0 0 0 10px black inset; }
 
 input.hidden-input,
 textarea.hidden-input {
@@ -5155,6 +5217,9 @@ textarea.hidden-input {
 .datepicker-container .datepicker-footer button {
   margin-left: 10px;
   margin-bottom: 10px; }
+
+.sidenav .input-field {
+  line-height: 1.5rem; }
 
 body {
   color: #333;
@@ -5684,19 +5749,53 @@ header {
           display: block;
           line-height: 61px;
           padding: 10px 0; }
-    header nav .nav-actions a {
-      margin-left: 20px; }
-      header nav .nav-actions a.search-trigger {
-        color: #AA9859;
-        line-height: 52px;
-        font-size: 21px; }
-      header nav .nav-actions a.btn {
-        display: inline-block;
-        transform: translateY(7px);
-        margin-right: 20px; }
-    @media (max-width: 700px) {
-      header nav .nav-actions {
-        display: none; } }
+    header nav .nav-actions {
+      padding-right: 20px; }
+      header nav .nav-actions a {
+        display: inline-block; }
+        header nav .nav-actions a.search-trigger {
+          color: #AA9859;
+          line-height: 52px;
+          font-size: 21px;
+          padding: 0 10px; }
+      header nav .nav-actions .profile-menu {
+        margin: 0;
+        display: inline-block; }
+        header nav .nav-actions .profile-menu > li {
+          position: relative;
+          padding: 0 10px; }
+          header nav .nav-actions .profile-menu > li i {
+            line-height: 54px;
+            color: #AA9859;
+            font-size: 21px;
+            line-height: 52px; }
+          header nav .nav-actions .profile-menu > li span {
+            display: inline-block; }
+          header nav .nav-actions .profile-menu > li .profile-menu-inner {
+            position: absolute;
+            top: calc(100% - 20px);
+            right: 0;
+            opacity: 0;
+            transition: opacity .2s, top .2s;
+            pointer-events: none;
+            background: #fff;
+            z-index: 6;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            border-radius: 4px;
+            overflow: hidden; }
+            header nav .nav-actions .profile-menu > li .profile-menu-inner li a {
+              line-height: 40px;
+              padding: 0 20px;
+              display: block; }
+              header nav .nav-actions .profile-menu > li .profile-menu-inner li a:hover {
+                background: #f3f3f3; }
+        header nav .nav-actions .profile-menu:hover .profile-menu-inner {
+          top: 100%;
+          opacity: 1;
+          pointer-events: all; }
+      @media (max-width: 700px) {
+        header nav .nav-actions {
+          display: none; } }
 
 body {
   padding-left: 62px; }
@@ -5745,6 +5844,8 @@ body {
     font-family: 'Lora';
     font-weight: 700; }
   .modal#login {
+    width: 320px; }
+  .modal#city-selector {
     width: 320px; }
 
 #main #hero {
@@ -6257,7 +6358,9 @@ div#gallery .gallery-entry .image, div#author .gallery-entry .image {
   #profile #gallery-editor .image-editor {
     padding-top: 65%;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 10px; }
     #profile #gallery-editor .image-editor .overlay {
       position: absolute;
       top: 0;
