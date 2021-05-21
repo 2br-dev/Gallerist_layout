@@ -12,6 +12,7 @@
 @import "./parts/helpers";
 @import "./parts/nav";
 @import "./parts/modals";
+@import "./parts/filters";
 
 //= Import entire pages ==============================
 @import "./pages/main";
@@ -19,3 +20,4 @@
 @import "./pages/gallery";
 @import "./pages/authors";
 @import "./pages/profile";
+@import "./pages/register";

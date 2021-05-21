@@ -22,6 +22,10 @@
         opacity: 0;
         transform: translateY(40px);
 
+        @media(max-width: $medium){
+            width: calc(100vw - 6rem);
+        }
+
         & .input-field{
     
             & input, & label{

@@ -27,10 +27,87 @@ $(() => {
     $('body').on('click', '.profile-gallery-entry', selectGalleryItem);
     $(window).on('resize', updateFooterHeight);
 
+    // Отработка эвентов по фильтрам
+    $('body').on('change', '.minmax input', setCurrentMinMax);
+	$('body').on('change', '.filters-block .values input[type=checkbox]', updateFiltersMultiSelect);
+    $('body').on('click', '.filters-block.select .values a', updateFiltersSelect);
+    $('body').on('reset', '.filters', resetFilters);
+    $('body').on('click', '.reset-filter', resetFilter);
+    $('body').on('click', '.accept', acceptMinMax);
     init();
 })
 
 //= Обработчики событий =======================================================
+function acceptMinMax(e){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    setCurrentMinMax(e, this);
+}
+function setCurrentMinMax(e, el){
+
+    var element = el ? el : this;
+    
+    var minmax = $(element).parents('.minmax');
+    var values = minmax.find('.minmax-block');
+    var tooltipHtml = "";
+
+    $(values).each((index, el) => {
+
+        var min = $(el).find('.min input').val();
+        var max = $(el).find('.max input').val();
+        if (min!='' || max!=''){
+            tooltipHtml += "1"
+        }
+    });
+    
+    if(tooltipHtml != ''){
+        minmax.find('.current i.mdi-information').removeClass('hidden');
+    }else{
+        minmax.find('.current i.mdi-information').addClass('hidden');
+    }
+
+}
+function resetFilter(e){
+  var filter = $(this).parents('.filters-block');
+  var multiselect = filter.hasClass('multiselect');
+  var select = filter.hasClass('select')
+
+  if(multiselect){
+    filter.find(':checked').prop('checked', false);
+    filter.find('.current .value').text('0');
+  }else{
+    if(select){
+        filter.find('.current input[type="hidden"]').val('');
+        filter.find('.current .value').text('Все');
+        filter.find('.values a').removeClass('active');
+        filter.find('.values li:first-of-type a').addClass('active');
+    }else{
+        filter.find('input').val('');
+        setCurrentMinMax(e, this);
+    }
+  }
+}
+function resetFilters(){
+  $('.filters-block.select .current .value').text('Все');
+  $('.filters-block input[type="hidden"]').val('');
+  $('.filters-block.multiselect .current .value').text('0');
+  $('.filters-block .values li a').removeClass('active');
+  $('.filters-block .values li:first-of-type a').addClass('active');
+}
+function updateFiltersMultiSelect(){
+  var checkedCount = $(this).parents('.values').find(':checked').length;
+  $(this).parents('.filters-block').find('.current .value').text(checkedCount);
+}
+function updateFiltersSelect(){
+  $(this).parents('.filters-block').find('.current .value').text($(this).text());
+  $(this).parents('.filters-block .values').find('a').removeClass('active');
+  $(this).addClass('active');
+  if($(this).text() == 'Все'){
+    $('.filters-block input[type="hidden"]').val('');
+  }else{
+    $('.filters-block input[type="hidden"]').val($(this).text());
+  }
+}
 function selectGalleryItem(){
     $('.profile-gallery-entry').removeClass("selected");
     $(this).addClass("selected");

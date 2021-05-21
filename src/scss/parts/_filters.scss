@@ -1,0 +1,166 @@
+.filters{
+
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    & .filters-block{
+
+        display: inline-block;
+        position: relative;
+        background: #e4e4e4;
+        border: 1px sold #e4e4e4;
+        line-height: 26px;
+        margin-bottom: 6px;
+        margin-right: 6px;
+
+        &.reset-wrapper{
+            border: 0;
+
+            & input{
+                margin: 0;
+            }
+        }
+
+        & .current{
+            display: flex;
+            padding: 6px 12px;
+
+            & .key, & .value, .reset-wrapper{
+                padding: 0 4px;
+            }
+        }
+
+        &.check{
+
+            & input{
+                display: none;
+
+                & ~ label{
+
+                    user-select: none;
+                    cursor: pointer;
+
+                    &:after{
+                        content: '\F0131';
+                        font-family: 'Material Design Icons';
+                        padding-left: 5px;
+                    }
+                }
+
+                &:checked ~ label:after{
+                    content: '\F0135';
+                }
+            }
+        }
+
+        & .values{
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            z-index: 80;
+            background: #fff;
+            top: 100%;
+            min-width: 100%;
+            margin: 0;
+            box-shadow: 0 2px 6px rgba(black, .4);
+            border-radius: 4px;
+            overflow: hidden;
+
+            & label, & a{
+                display: block;
+                line-height: 36px;
+                padding: 0 10px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #f3f3f3;
+                }
+            }
+
+            & .input-field-check{
+
+                display: block;
+
+                & input{
+                    display: none;
+
+                    & ~ label{
+
+                        &:before{
+                            padding-right: 6px;
+                            content: '\F012C';
+                            font-family: 'Material Design Icons';
+                            color: transparent;
+                        }
+
+                    }
+                    &:checked ~ label:before{
+                        color: $text;
+                    }
+                }
+            }
+
+            & .minmax-block{
+
+                display: flex;
+                min-width: 170px;
+
+                @media(max-width: 600px){
+
+                    flex-wrap: wrap;
+
+                    & > label{
+                        width: 100%;
+                    }
+
+                    & .min, & .max{
+
+                        width: 40%;
+
+                        & input{
+                            width: 100% !important;
+                            height: 40px !important;
+                            margin: 0;
+                        }
+                    }
+                }
+                
+                &:hover{
+                    background-color: #f3f3f3;
+                }
+
+                & label{
+                    width: 130px;
+                }
+
+                & .min, & .max{
+
+                    & input{
+                        display: block;
+                        width: 80px;
+                        height: 100%;
+                        border: 1px solid #eee;
+                        background: transparent;
+
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover .values{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}

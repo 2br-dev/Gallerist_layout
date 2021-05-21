@@ -1,0 +1,39 @@
+#register{
+
+    & .avatar-holder{
+
+        & input[type="file"]{
+            display: none;
+        }
+
+        & .avatar{
+            display: block;
+            width: 80px;
+            height: 80px;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+
+            & .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                line-height: 80px;
+                text-align: center;
+                font-size: 21px;
+                background: rgba(black, .7);
+                color: #fff;
+                opacity: 0;
+                transition: opacity .2s;
+            }
+
+            &:hover .overlay{
+                opacity: 1;
+            }
+        }
+    }
+
+}

@@ -51,6 +51,7 @@
             <a class="search-trigger"><i class="mdi mdi-magnify"></i></a>
         </div>
         <div class="burger-wrapper">
+            <a class="mobile-searcher search-trigger gold-text"><i class="mdi mdi-magnify"></i></a>
             <a href="#mobile-navi" class="sidenav-trigger">
                 <i class="mdi mdi-menu"></i>
             </a>
@@ -88,6 +89,14 @@
                 <div class="row">
                     <div class="col l4 m6 s12">
                         <form action="" id="register">
+                            <div class="avatar-holder">
+                                <input type="file" name="avatar" id="avatar-file-selector">
+                                <label for="avatar-file-selector" class="avatar lazy" data-src="/img/no-photo.png">
+                                    <div class="overlay">
+                                        <i class="mdi mdi-camera"></i>
+                                    </div>
+                                </label>
+                            </div>
                             <div class="input-field-check"><input class="styled" checked type="radio" name="profile-type" id="artist"><label for="artist">Художник</label></div>
                             <div class="input-field-check"><input class="styled" type="radio" name="profile-type" id="customer"><label for="customer">Покупатель</label></div>
                             <div><a href="#city-selector" class="btn btn-flat modal-trigger" id="city-selector-trigger">Выбрать город</a></div>

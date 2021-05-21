@@ -5,7 +5,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 20;
+    z-index: 500;
     background: $paper;
     width: fit-content;
 
@@ -218,6 +218,21 @@ header{
             @media(max-width: $mobile-edge){
                 display: none;
             }
+        }
+
+        & .mobile-searcher{
+
+            @media(min-width: 700px){
+                display: none;
+            }
+
+            position: fixed;
+            top: 0;
+            right: 54px;
+            width: 54px;
+            line-height: 54px;
+            text-align: center;
+            font-size: 21px;
         }
     }
 }

@@ -12,6 +12,9 @@
                     <div class="col s12">
                         <h1>Галерея</h1>
                     </div>
+                    <div class="col s12">
+                        @@include('./parts/filters.html')
+                    </div>
                     @@loop('./parts/gallery-entry-catalog.html', './data/gallery.json')
                 </div>
                 <div class="row">

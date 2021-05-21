@@ -1,0 +1,111 @@
+<form class="filters">
+    <div class="filters-block minmax">
+        <div class="current">
+            <div class="key">Цена</div>
+            <div class="value"><i class="mdi mdi-information gold-text hidden"></i></div>
+            <div class="reset-wrapper"><a class="reset-filter"><i class="mdi mdi-close-circle"></i></a></div>
+        </div>
+        <div class="values">
+            <div class="minmax-block">
+                <label>Сумма в ₽</label>
+                <div class="min"><input type="number" placeholder="мин."></div>
+                <div class="max"><input type="number" placeholder="макс."></div>
+                <div class="accept"><a class="accept"><i class="mdi mdi-check"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="filters-block minmax">
+        <div class="current">
+            <div class="key">Размер</div>
+            <div class="value"><i class="mdi mdi-information gold-text hidden"></i></div>
+            <div class="reset-wrapper"><a class="reset-filter"><i class="mdi mdi-close-circle"></i></a></div>
+        </div>
+        <div class="values">
+            <div class="minmax-block">
+                <label>Ширина (см)</label>
+                <div class="min"><input type="number" placeholder="мин."></div>
+                <div class="max"><input type="number" placeholder="макс."></div>
+                <div class="accept"><a class="accept"><i class="mdi mdi-check"></i></a></div>
+            </div>
+            <div class="minmax-block">
+                <label>Высота (см)</label>
+                <div class="min"><input type="number" placeholder="мин."></div>
+                <div class="max"><input type="number" placeholder="макс."></div>
+                <div class="accept"><a class="accept"><i class="mdi mdi-check"></i></a></div>
+            </div>
+            <div class="minmax-block">
+                <label>Глубина (см)</label>
+                <div class="min"><input type="number" placeholder="мин."></div>
+                <div class="max"><input type="number" placeholder="макс."></div>
+                <div class="accept"><a class="accept"><i class="mdi mdi-check"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="filters-block check">
+        <div class="current">
+            <div class="key"><input type="checkbox" id="baget"><label for="baget">Багет</label></div>
+        </div>
+    </div>
+    <div class="filters-block check">
+        <div class="current">
+            <div class="key"><input type="checkbox" id="exists"><label for="exists">В наличии</label></div>
+        </div>
+    </div>
+    <div class="filters-block multiselect">
+        <div class="current">
+            <div class="key">Стиль</div>
+            <div class="value">0</div>
+            <div class="reset-wrapper"><a class="reset-filter"><i class="mdi mdi-close-circle"></i></a></div>
+        </div>
+        <ul class="values">
+            <li class="input-field-check"><input type="checkbox" name="style" id="style1"><label for="style1">Модерн</label></li>
+            <li class="input-field-check"><input type="checkbox" name="style" id="style2"><label for="style2">Классика</label></li>
+            <li class="input-field-check"><input type="checkbox" name="style" id="style3"><label for="style3">Хай-тек</label></li>
+            <li class="input-field-check"><input type="checkbox" name="style" id="style4"><label for="style4">Урбан</label></li>
+            <li class="input-field-check"><input type="checkbox" name="style" id="style5"><label for="style5">Минимализм</label></li>
+        </ul>
+    </div>
+    <div class="filters-block multiselect">
+        <div class="current">
+            <div class="key">Материал</div>
+            <div class="value">0</div>
+            <div class="reset-wrapper"><a class="reset-filter"><i class="mdi mdi-close-circle"></i></a></div>
+        </div>
+        <ul class="values">
+            <li class="input-field-check"><input type="checkbox" name="material" id="material1"><label for="material1">Холст</label></li>
+            <li class="input-field-check"><input type="checkbox" name="material" id="material2"><label for="material2">Бумага</label></li>
+            <li class="input-field-check"><input type="checkbox" name="material" id="material3"><label for="material3">Картон</label></li>
+            <li class="input-field-check"><input type="checkbox" name="material" id="material4"><label for="material4">Ткань</label></li>
+            <li class="input-field-check"><input type="checkbox" name="material" id="material5"><label for="material5">Стекло</label></li>
+        </ul>
+    </div>
+    <div class="filters-block multiselect">
+        <div class="current">
+            <div class="key">Техника</div>
+            <div class="value">0</div>
+            <div class="reset-wrapper"><a class="reset-filter"><i class="mdi mdi-close-circle"></i></a></div>
+        </div>
+        <ul class="values">
+            <li class="input-field-check"><input type="checkbox" name="technics" id="technics1"><label for="technics1">Акрил</label></li>
+            <li class="input-field-check"><input type="checkbox" name="technics" id="technics2"><label for="technics2">Масло</label></li>
+            <li class="input-field-check"><input type="checkbox" name="technics" id="technics3"><label for="technics3">Акварель</label></li>
+            <li class="input-field-check"><input type="checkbox" name="technics" id="technics4"><label for="technics4">Гуашь</label></li>
+            <li class="input-field-check"><input type="checkbox" name="technics" id="technics5"><label for="technics5">Чернила</label></li>
+            <li class="input-field-check"><input type="checkbox" name="technics" id="technics6"><label for="technics6">Тушь</label></li>
+        </ul>
+    </div>
+    <div class="filters-block select">
+        <div class="current">
+            <div class="key">Ориентация</div>
+            <div class="value">Все</div>
+            <div class="reset-wrapper"><a class="reset-filter"><i class="mdi mdi-close-circle"></i></a></div>
+        </div>
+        <input type="hidden" name="setup">
+        <ul class="values">
+            <li><a>Все</a></li>
+            <li><a>Горизонтальные</a></li>
+            <li><a>Вертикальные</a></li>
+        </ul>
+    </div>
+    <div class="filters-block reset-wrapper"><input type="reset" class="btn" value="Сбросить"></div>
+</form>
