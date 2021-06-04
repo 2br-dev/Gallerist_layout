@@ -96,10 +96,34 @@
                                         <i class="mdi mdi-camera"></i>
                                     </div>
                                 </label>
+                                <label class="filename-wrapper">
+                                    <span id="filename"></span>
+                                </label>
                             </div>
                             <div class="input-field-check"><input class="styled" checked type="radio" name="profile-type" id="artist"><label for="artist">Художник</label></div>
                             <div class="input-field-check"><input class="styled" type="radio" name="profile-type" id="customer"><label for="customer">Покупатель</label></div>
-                            <div><a href="#city-selector" class="btn btn-flat modal-trigger" id="city-selector-trigger">Выбрать город</a></div>
+                            <!-- Город не выбран -->
+                            <div>
+                                <a href="#city-selector" class="btn btn-flat modal-trigger" id="city-selector-trigger">
+                                    <span id="prompt">Выбрать город</span>
+                                    <span id="selected-city" class="hidden">
+                                        <i id="region">Краснодарский край</i>, 
+                                        <i id="city">Краснодар</i>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- / -->
+                            <!-- Город выбран -->
+                            <!-- <div>
+                                <a href="#city-selector" class="btn btn-flat modal-trigger" id="city-selector-trigger">
+                                    <span id="prompt" class="hidden">Выбрать город</span>
+                                    <span id="selected-city">
+                                        <i id="region">Краснодарский край</i>, 
+                                        <i id="city">Краснодар</i>
+                                    </span>
+                                </a>
+                            </div> -->
+                            <!-- / -->
                             <div class="input-field"><input class="styled" type="text" placeholder="Фамилия"><label for="">Фамилия</label></div>
                             <div class="input-field"><input class="styled" type="text" placeholder="Имя"><label for="">Имя</label></div>
                             <div class="input-field"><input class="styled" type="text" placeholder="Отество"><label for="">Отество</label></div>
@@ -147,7 +171,10 @@
             </div>
         </section>
     </div>
-    <footer>
+    <a class="floating-action-button">
+    <i class="mdi mdi-cloud-upload"></i>
+</a>
+<footer>
     <div class="container">
         <div class="logo-wrapper">
             <div class="logo"></div>

@@ -25,6 +25,7 @@ $(() => {
     $('body').on('click', '#saver', toggleEdit);
     $('body').on('click', '.datePicker', openPicker);
     $('body').on('click', '.profile-gallery-entry', selectGalleryItem);
+    $('body').on('change', '#avatar-file-selector', updateAvatar);
     $(window).on('resize', updateFooterHeight);
 
     // Отработка эвентов по фильтрам
@@ -38,6 +39,13 @@ $(() => {
 })
 
 //= Обработчики событий =======================================================
+function updateAvatar(){
+    var file = this.files[0].name;
+    if(file){
+        $(this).next().addClass('file-selected');
+        $(this).parent().find('#filename').text(file);
+    }
+}
 function acceptMinMax(e){
     e.preventDefault();
     e.stopImmediatePropagation();
@@ -300,7 +308,16 @@ function init(){
         dataType: "JSON",
         success: function(data){
             regions = M.Autocomplete.init(document.querySelector('#regions'), {
-                data: data
+                data: data,
+                onBlur: (nearestSubstitute, clickedItem) => {
+                    if(!clickedItem){
+                        document.querySelector('#regions').value = nearestSubstitute
+                        console.log("Выбран элемент:" + nearestSubstitute);
+                    }
+                },
+                onItemSelect: (liElement) => {
+                    console.log("Выбран элемент:" + liElement.innerText);
+                }
             })
         }
     })

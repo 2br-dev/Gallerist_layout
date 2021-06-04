@@ -2,6 +2,28 @@
 
     & .avatar-holder{
 
+        display: flex;
+
+        & .file-selected{
+            box-shadow: 0 0 0 2px $gold inset;
+        }
+
+        & .filename-wrapper{
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-grow: 1;
+
+            & #filename{
+                display: block;
+                overflow: hidden;
+                max-width: 100%;
+                text-overflow: ellipsis;
+            }
+        }
+
         & input[type="file"]{
             display: none;
         }
@@ -10,6 +32,7 @@
             display: block;
             width: 80px;
             height: 80px;
+            flex-shrink: 0;
             padding: 0;
             position: relative;
             overflow: hidden;
@@ -36,4 +59,14 @@
         }
     }
 
+    & #selected-city{
+
+        & i{
+            font-style: normal;
+
+            &#city{
+                color: $gold;
+            }
+        }
+    }
 }
