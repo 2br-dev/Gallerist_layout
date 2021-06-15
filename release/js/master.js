@@ -24,6 +24,7 @@ $(() => {
     $('body').on('click', '.folder', toggleSidenavFolder);
     $('body').on('click', '#saver', toggleEdit);
     $('body').on('click', '.datePicker', openPicker);
+    $('body').on('click', '.action-preview', previewArt);
     $('body').on('click', '.profile-gallery-entry', selectGalleryItem);
     $('body').on('change', '#avatar-file-selector', updateAvatar);
     $(window).on('resize', updateFooterHeight);
@@ -39,6 +40,13 @@ $(() => {
 })
 
 //= Обработчики событий =======================================================
+function previewArt(e){
+    e.preventDefault();
+    var parent = $(this).parents('.gallery-entry');
+    var lazyImage = parent.find('img.lazy');
+    var instance = M.Materialbox.getInstance(lazyImage);
+    instance.open();
+}
 function updateAvatar(){
     var file = this.files[0].name;
     if(file){
@@ -176,6 +184,8 @@ function init(){
             $('.lazy').lazy();
         })
     }
+
+    materialboxed = M.Materialbox.init(document.querySelectorAll('.materialboxed'));
 
     datepicker = M.Datepicker.init(document.querySelectorAll('.datepicker'), {
         firstDay: 1,
