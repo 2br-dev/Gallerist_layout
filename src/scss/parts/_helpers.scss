@@ -3,8 +3,8 @@ $offset: 30px;
 body{
 
     & .hidden{
-        display: none;
-        pointer-events: none;
+        display: none !important;
+        pointer-events: none !important;
     }
 
     color: $text;
@@ -101,7 +101,7 @@ body{
     }
     
     & .global-wrapper{
-        background: #FAFAFA url(/img/body_background.png) top right no-repeat;
+        background: #FAFAFA url(../img/body_background.png) top right no-repeat;
         background-size: 40% auto;
         z-index: 2;
     }
@@ -643,7 +643,7 @@ body{
         & .user-view{
 
             height: 120px;
-            background: #eee url(/img/sidenav_logo.svg) center center no-repeat;
+            background: #eee url(../img/sidenav_logo.svg) center center no-repeat;
 
         }
 

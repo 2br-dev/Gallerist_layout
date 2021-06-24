@@ -69,6 +69,12 @@
                     }
                 }
             }
+            & .error-text{
+                color: red;
+                font-size: 12px;
+                font-style: italic;
+                transform: translateY(-6px);
+            }
         }
 
     }

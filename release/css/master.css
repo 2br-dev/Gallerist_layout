@@ -4061,7 +4061,7 @@ button.swiper-pagination-bullet {
   position: relative;
   overflow: hidden;
   transition: background-color .2s;
-  background-image: url(/img/btn-labe.svg);
+  background-image: url(../img/btn-labe.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 10px auto;
@@ -5313,8 +5313,8 @@ body {
   color: #333;
   background-color: #fafafa; }
   body .hidden {
-    display: none;
-    pointer-events: none; }
+    display: none !important;
+    pointer-events: none !important; }
   body .kv-pair {
     display: table-row; }
     body .kv-pair .key, body .kv-pair .value {
@@ -5369,7 +5369,7 @@ body {
     body {
       background-image: none; } }
   body .global-wrapper {
-    background: #FAFAFA url(/img/body_background.png) top right no-repeat;
+    background: #FAFAFA url(../img/body_background.png) top right no-repeat;
     background-size: 40% auto;
     z-index: 2; }
   body .gold-text {
@@ -5727,7 +5727,7 @@ body {
         text-align: center; } }
   body .sidenav .user-view {
     height: 120px;
-    background: #eee url(/img/sidenav_logo.svg) center center no-repeat; }
+    background: #eee url(../img/sidenav_logo.svg) center center no-repeat; }
   body .sidenav .folder ul {
     transition: background-color .3s; }
     body .sidenav .folder ul li {
@@ -5837,7 +5837,7 @@ header {
       left: 0;
       width: 61px;
       height: 61px;
-      background: url(/img/logo-header.svg) center center no-repeat; }
+      background: url(../img/logo-header.svg) center center no-repeat; }
       @media (max-width: 700px) {
         header nav .logo {
           width: 54px;
@@ -5996,7 +5996,7 @@ body {
     display: inline-block;
     position: relative;
     background: #e4e4e4;
-    border: 1px sold #e4e4e4;
+    border: 1px solid #e4e4e4;
     line-height: 26px;
     margin-bottom: 6px;
     margin-right: 6px; }
@@ -6088,15 +6088,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fafafa url(/img/ll.svg) center center no-repeat;
+  background: #fafafa url(../img/ll.svg) center center no-repeat;
   background-size: auto 110%; }
   #main #hero h1 {
     color: transparent;
     border: 1px solid red;
     display: block;
     margin: 0;
-    mask: url(/img/gallerist.svg) center center no-repeat;
-    -webkit-mask: url(/img/gallerist.svg) no-repeat center center;
+    mask: url(../img/gallerist.svg) center center no-repeat;
+    -webkit-mask: url(../img/gallerist.svg) no-repeat center center;
     mask-size: 40vw auto;
     -webkit-mask-size: 40vw auto;
     background: black;
@@ -6159,19 +6159,19 @@ body {
 
 @keyframes logo_animation {
   0% {
-    background: url(/img/1.jpg);
+    background: url(../img/1.jpg);
     background-position: center left; }
   25% {
-    background: url(/img/2.jpg);
+    background: url(../img/2.jpg);
     background-position: center right; }
   50% {
-    background: url(/img/3.jpg);
+    background: url(../img/3.jpg);
     background-position: top center; }
   75% {
-    background: url(/img/4.jpg);
+    background: url(../img/4.jpg);
     background-position: bottom center; }
   100% {
-    background: url(/img/1.jpg);
+    background: url(../img/1.jpg);
     background-position: center left; } }
 
 #product .data-wrapper {
@@ -6383,7 +6383,7 @@ div#gallery .gallery-entry .image, div#author .gallery-entry .image {
   .global-wrapper#authors .author-entry .tags-wrapper {
     flex-grow: 1;
     padding: 0 10px;
-    white-space: wrap;
+    white-space: normal;
     width: 25%; }
   .global-wrapper#authors .author-entry .gallery {
     flex-grow: 1;
@@ -6488,6 +6488,11 @@ div#gallery .gallery-entry .image, div#author .gallery-entry .image {
     padding-right: 20px; }
     #profile #profile-data .kv-wrapper .kv-pair .key input, #profile #profile-data .kv-wrapper .kv-pair .value input {
       width: 100%; }
+  #profile #profile-data .kv-wrapper .error-text {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    transform: translateY(-6px); }
 
 #profile textarea {
   width: 100%;

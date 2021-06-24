@@ -15,7 +15,7 @@
     "extraClass": ""
   },
   {
-    "name": "Папоротник",
+    "name": "Цветок",
     "price": "8 000",
     "author": "Екатерина Сапельникова",
     "image": "/img/gallery/blue-flower.jpg",
@@ -30,7 +30,7 @@
     "extraClass": ""
   },
   {
-    "name": "Абстракция",
+    "name": "Ваза с незабудками",
     "price": "4 000",
     "author": "Михаил Черенков",
     "image": "/img/gallery/flower-infinity.jpg",
@@ -45,7 +45,7 @@
     "extraClass": ""
   },
   {
-    "name": "Портрет баронессы",
+    "name": "Вечерний коньяк в одиночку",
     "price": "80 000",
     "author": "Марко Капелло",
     "image": "/img/gallery/friday-evening.jpg",
@@ -60,7 +60,7 @@
     "extraClass": ""
   },
   {
-    "name": "Колесо обозрения",
+    "name": "Домашний сторож",
     "price": "12 000",
     "author": "Екатерина Сапельникова",
     "image": "/img/gallery/kitty.jpg",
@@ -75,7 +75,7 @@
     "extraClass": ""
   },
   {
-    "name": "На мосту",
+    "name": "Натюрморт «Лимон»",
     "price": "14 000",
     "author": "Снежана Авдеева",
     "image": "/img/gallery/lime.jpg",
@@ -90,7 +90,7 @@
     "extraClass": ""
   },
   {
-    "name": "Еще абстракция",
+    "name": "Лотосы",
     "price": "3 500",
     "author": "Михаил Черенков",
     "image": "/img/gallery/lotus.jpg",
@@ -105,7 +105,7 @@
     "extraClass": "selected"
   },
   {
-    "name": "Око",
+    "name": "Абстракция",
     "price": "12 000",
     "author": "Анонина Павлова",
     "image": "/img/gallery/mistery_island.jpg",
@@ -120,7 +120,7 @@
     "extraClass": ""
   },
   {
-    "name": "Жук",
+    "name": "Белые орхидеи",
     "price": "3 000",
     "author": "Иван Григорович",
     "image": "/img/gallery/narcis.jpg",
@@ -135,9 +135,9 @@
     "extraClass": ""
   },
   {
-    "name": "Зимний двор",
+    "name": "Натюрморт «Гранат»",
     "price": "4 000",
-    "author": "Александр Сухоруков",
+    "author": "Снежана Авдеева",
     "image": "/img/gallery/naturemort.jpg",
     "size": "100x60x3 см",
     "style": "Модерн",
@@ -150,7 +150,7 @@
     "extraClass": ""
   },
   {
-    "name": "Приплыли",
+    "name": "Музыкальное лето",
     "price": "6 000",
     "author": "Ольга Кононович",
     "image": "/img/gallery/piano.jpg",
@@ -165,7 +165,7 @@
     "extraClass": ""
   },
   {
-    "name": "Птах",
+    "name": "Гранат",
     "price": "6 000",
     "author": "Евгений Костин",
     "image": "/img/gallery/pomegranate.jpg",

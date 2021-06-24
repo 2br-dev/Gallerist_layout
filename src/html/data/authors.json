@@ -32,7 +32,7 @@
   },
   {
     "avatar": "https://i.pravatar.cc/300?u=2",
-    "name": "Настасья Лью",
+    "name": "Алексей Павлов",
     "location": "Россия, Нижний Новгород",
     "art_count": 16,
     "min_price": "6 500",
@@ -89,7 +89,7 @@
   },
   {
     "avatar": "https://i.pravatar.cc/300?u=4",
-    "name": "Евгений Костин",
+    "name": "Ирина Костина",
     "location": "Россия, Саратов",
     "art_count": 8,
     "min_price": "6 500",
@@ -114,7 +114,7 @@
     ]
   },
   {
-    "avatar": "https://i.pravatar.cc/300?u=5",
+    "avatar": "https://i.pravatar.cc/300?u=16",
     "name": "Антонина Павлова",
     "location": "Россия, Краснодар",
     "art_count": 21,
@@ -146,7 +146,7 @@
   },
   {
     "avatar": "https://i.pravatar.cc/300?u=6",
-    "name": "Вахтанг Мураев",
+    "name": "Ким Ю",
     "location": "Россия, Геленджик",
     "art_count": 0,
     "min_price": 0,
@@ -172,7 +172,7 @@
   },
   {
     "avatar": "https://i.pravatar.cc/300?u=7",
-    "name": "Ольга Кононович",
+    "name": "Елена Сергеева",
     "location": "Россия, Краснодар",
     "art_count": 21,
     "min_price": "14 000",
@@ -197,8 +197,8 @@
     ]
   },
   {
-    "avatar": "https://i.pravatar.cc/300?u=8",
-    "name": "Настасья Лью",
+    "avatar": "https://i.pravatar.cc/300?u=19",
+    "name": "Владимир Субботин",
     "location": "Россия, Нижний Новгород",
     "art_count": 16,
     "min_price": "6 500",
@@ -224,8 +224,8 @@
   },
   {
     "avatar": "https://i.pravatar.cc/300?u=9",
-    "name": "Екатерина Сапельникова",
-    "location": "Россия, Усурийск",
+    "name": "Анджей Стаховски",
+    "location": "Польша, Варшава",
     "art_count": 16,
     "min_price": "4 200",
     "registered": "21 февраля 2019",
@@ -249,8 +249,8 @@
     ]
   },
   {
-    "avatar": "https://i.pravatar.cc/300?u=10",
-    "name": "Евгений Костин",
+    "avatar": "https://i.pravatar.cc/300?u=22",
+    "name": "Алина Вердяева",
     "location": "Россия, Саратов",
     "art_count": 8,
     "min_price": "6 500",
@@ -276,7 +276,7 @@
   },
   {
     "avatar": "https://i.pravatar.cc/300?u=11",
-    "name": "Антонина Павлова",
+    "name": "Светлана Прохорова",
     "location": "Россия, Краснодар",
     "art_count": 21,
     "min_price": "14 000",
@@ -301,8 +301,8 @@
     ]
   },
   {
-    "avatar": "https://i.pravatar.cc/300?u=12",
-    "name": "Вахтанг Мураев",
+    "avatar": "https://i.pravatar.cc/300?u=34",
+    "name": "Светлана Мураева",
     "location": "Россия, Геленджик",
     "art_count": 0,
     "min_price": 0,

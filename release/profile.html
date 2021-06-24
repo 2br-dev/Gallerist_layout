@@ -29,14 +29,14 @@
         </ul>
         <div class="nav-actions">
             <!-- Неавторизованный пользователь -->
-            <div class="hidden">
+            <div class="">
                 <a href="#login" class="btn btn-small modal-trigger">
                     <span class="white-text">Войти</span>
                 </a>
             </div>
             <!-- / -->
             <!-- Авторизованный пользователь -->
-            <ul class="profile-menu">
+            <ul class="profile-menu hidden">
                 <li>
                     <i class="mdi mdi-account-circle"></i>
                 </li>
@@ -104,30 +104,49 @@
                                 </div>
                                 <div class="value"><input type="text" class="hidden-input" value="Россия"></div>
                             </div>
+                            <div class="error-text">Укажите страну</div>
                             <div class="kv-pair">
                                 <div class="key">
                                     <div class="fogged">Город</div>
                                 </div>
                                 <div class="value"><input type="text" class="hidden-input" value="Краснодар"></div>
                             </div>
+                            <div class="error-text">Укажите город</div>
                             <div class="kv-pair">
                                 <div class="key">
                                     <div class="fogged">Фамилия</div>
                                 </div>
                                 <div class="value"><input type="text" class="hidden-input" value="Кононович"></div>
                             </div>
+                            <div class="error-text">Укажите фамилию</div>
                             <div class="kv-pair">
                                 <div class="key">
                                     <div class="fogged">Имя</div>
                                 </div>
                                 <div class="value"><input type="text" class="hidden-input" value="Ольга"></div>
                             </div>
+                            <div class="error-text">Укажите Имя</div>
                             <div class="kv-pair">
                                 <div class="key">
                                     <div class="fogged">Отчество</div>
                                 </div>
                                 <div class="value"><input type="text" class="hidden-input" value="Владимировна"></div>
                             </div>
+                            <div class="error-text">Укажите Отчество</div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">E-mail</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="masterkadaj@gmail.com"></div>
+                            </div>
+                            <div class="error-text">Неверный формат</div>
+                            <div class="kv-pair">
+                                <div class="key">
+                                    <div class="fogged">Телефон</div>
+                                </div>
+                                <div class="value"><input type="text" class="hidden-input" value="+3546лдовыап3"></div>
+                            </div>
+                            <div class="error-text">Неверный телефон</div>
                             <div class="kv-pair">
                                 <div class="key">
                                     <div class="fogged">Дата рождения</div>
@@ -138,6 +157,7 @@
                                     <input type="hidden" name="birthday">
                                 </div>
                             </div>
+                            <div class="error-text">Укажите дату рождения</div>
                             <div class="kv-pair">
                                 <div class="key">
                                     <div class="fogged">Дата регистрации</div>
@@ -151,7 +171,7 @@
                         </div>
                     </div>
                     <div class="col m6 s12">
-                        <textarea class="hidden-input">Франсиско Хосе де Гойя-и-Лусьентес (исп. Francisco José de Goya y Lucientes; 30 марта 1746, Фуэндетодос, близ Сарагосы — 16 апреля 1828, Бордо) — испанский художник и гравёр, один из первых и наиболее ярких мастеров изобразительного искусства эпохи романтизма.</textarea>
+                        <textarea class="hidden-input" placeholder="Коротко о себе">Обычная художница из южной столицы нашей необъятной Родины. Предпочитаю писать картины маслом на холсте, иногда эксперементирую в области материалов – в частности очень понравился уголь, и патель – очень мягкие и податливые материалы, мягкость порождает необходимость зафиксировать материал, вобщем – в постоянном творческом поиске))</textarea>
                     </div>
                     <div class="col s12 right-align">
                         <a href="" class="btn btn-flat">Изменить <span class="gold-text">пароль</span></a>
@@ -189,7 +209,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/blue-flower.jpg"></div>
     </div>
-    <div class="name">Папоротник</div>
+    <div class="name">Цветок</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">60x100x3 см</div>
     <div class="price">8 000₽</div>
@@ -198,7 +218,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/flower-infinity.jpg"></div>
     </div>
-    <div class="name">Абстракция</div>
+    <div class="name">Ваза с незабудками</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">100x60x3 см</div>
     <div class="price">4 000₽</div>
@@ -207,7 +227,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/friday-evening.jpg"></div>
     </div>
-    <div class="name">Портрет баронессы</div>
+    <div class="name">Вечерний коньяк в одиночку</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">60x100x3 см</div>
     <div class="price">80 000₽</div>
@@ -216,7 +236,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/kitty.jpg"></div>
     </div>
-    <div class="name">Колесо обозрения</div>
+    <div class="name">Домашний сторож</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">100x60x3 см</div>
     <div class="price">12 000₽</div>
@@ -225,7 +245,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/lime.jpg"></div>
     </div>
-    <div class="name">На мосту</div>
+    <div class="name">Натюрморт «Лимон»</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">60x100x3 см</div>
     <div class="price">14 000₽</div>
@@ -234,7 +254,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/lotus.jpg"></div>
     </div>
-    <div class="name">Еще абстракция</div>
+    <div class="name">Лотосы</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">100x60x3 см</div>
     <div class="price">3 500₽</div>
@@ -243,7 +263,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/mistery_island.jpg"></div>
     </div>
-    <div class="name">Око</div>
+    <div class="name">Абстракция</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">60x100x3 см</div>
     <div class="price">12 000₽</div>
@@ -252,7 +272,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/narcis.jpg"></div>
     </div>
-    <div class="name">Жук</div>
+    <div class="name">Белые орхидеи</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">60x100x3 см</div>
     <div class="price">3 000₽</div>
@@ -261,7 +281,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/naturemort.jpg"></div>
     </div>
-    <div class="name">Зимний двор</div>
+    <div class="name">Натюрморт «Гранат»</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">100x60x3 см</div>
     <div class="price">4 000₽</div>
@@ -270,7 +290,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/piano.jpg"></div>
     </div>
-    <div class="name">Приплыли</div>
+    <div class="name">Музыкальное лето</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">60x100x3 см</div>
     <div class="price">6 000₽</div>
@@ -279,7 +299,7 @@
     <div class="thumbnail">
         <div class="lazy" data-src="/img/gallery/pomegranate.jpg"></div>
     </div>
-    <div class="name">Птах</div>
+    <div class="name">Гранат</div>
     <div class="date">12 апреля 2021</div>
     <div class="size">100x60x3 см</div>
     <div class="price">6 000₽</div>
@@ -517,7 +537,7 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=2"></div>
     </div>
-    <div class="name-wrapper">Настасья Лью</div>
+    <div class="name-wrapper">Алексей Павлов</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -535,14 +555,14 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=4"></div>
     </div>
-    <div class="name-wrapper">Евгений Костин</div>
+    <div class="name-wrapper">Ирина Костина</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </li><li class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=5"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=16"></div>
     </div>
     <div class="name-wrapper">Антонина Павлова</div>
     <div class="actions">
@@ -553,7 +573,7 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=6"></div>
     </div>
-    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="name-wrapper">Ким Ю</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -562,16 +582,16 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=7"></div>
     </div>
-    <div class="name-wrapper">Ольга Кононович</div>
+    <div class="name-wrapper">Елена Сергеева</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </li><li class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=8"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=19"></div>
     </div>
-    <div class="name-wrapper">Настасья Лью</div>
+    <div class="name-wrapper">Владимир Субботин</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -580,16 +600,16 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=9"></div>
     </div>
-    <div class="name-wrapper">Екатерина Сапельникова</div>
+    <div class="name-wrapper">Анджей Стаховски</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </li><li class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=10"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=22"></div>
     </div>
-    <div class="name-wrapper">Евгений Костин</div>
+    <div class="name-wrapper">Алина Вердяева</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -598,16 +618,16 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=11"></div>
     </div>
-    <div class="name-wrapper">Антонина Павлова</div>
+    <div class="name-wrapper">Светлана Прохорова</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </li><li class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=12"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=34"></div>
     </div>
-    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="name-wrapper">Светлана Мураева</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -647,7 +667,7 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=2"></div>
     </div>
-    <div class="name-wrapper">Настасья Лью</div>
+    <div class="name-wrapper">Алексей Павлов</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -665,14 +685,14 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=4"></div>
     </div>
-    <div class="name-wrapper">Евгений Костин</div>
+    <div class="name-wrapper">Ирина Костина</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </div><div class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=5"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=16"></div>
     </div>
     <div class="name-wrapper">Антонина Павлова</div>
     <div class="actions">
@@ -683,7 +703,7 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=6"></div>
     </div>
-    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="name-wrapper">Ким Ю</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -692,16 +712,16 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=7"></div>
     </div>
-    <div class="name-wrapper">Ольга Кононович</div>
+    <div class="name-wrapper">Елена Сергеева</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </div><div class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=8"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=19"></div>
     </div>
-    <div class="name-wrapper">Настасья Лью</div>
+    <div class="name-wrapper">Владимир Субботин</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -710,16 +730,16 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=9"></div>
     </div>
-    <div class="name-wrapper">Екатерина Сапельникова</div>
+    <div class="name-wrapper">Анджей Стаховски</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </div><div class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=10"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=22"></div>
     </div>
-    <div class="name-wrapper">Евгений Костин</div>
+    <div class="name-wrapper">Алина Вердяева</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -728,16 +748,16 @@
     <div class="avatar-wrapper">
         <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=11"></div>
     </div>
-    <div class="name-wrapper">Антонина Павлова</div>
+    <div class="name-wrapper">Светлана Прохорова</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
     </div>
 </div><div class="message-author">
     <div class="avatar-wrapper">
-        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=12"></div>
+        <div class="avatar lazy" data-src="https://i.pravatar.cc/300?u=34"></div>
     </div>
-    <div class="name-wrapper">Вахтанг Мураев</div>
+    <div class="name-wrapper">Светлана Мураева</div>
     <div class="actions">
         <a href="" class="remove-action"><i class="mdi mdi-delete"></i></a>
         <a href=""><i class="mdi mdi-message"></i></a>
@@ -780,7 +800,7 @@
                 </div>
                 <div class="col m8 s12">
                     <!-- Данные еще не отправлены -->
-                    <div class="row hidden">
+                    <div class="row">
                         <div class="col s12">
                             <div class="form-header">Обратная связь</div>
                         </div>
@@ -811,7 +831,7 @@
                     </div>
                     <!-- / -->
                     <!-- Данные успешно отправлены -->
-                    <div class="footer-success center-align">
+                    <div class="footer-success center-align hidden">
                         <p>
                             <i class="mdi mdi-check-circle green-text"></i>
                         </p>
