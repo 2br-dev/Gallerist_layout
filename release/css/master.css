@@ -6479,15 +6479,18 @@ div#gallery .gallery-entry .image, div#author .gallery-entry .image {
     cursor: pointer; }
 
 #profile #profile-data .kv-wrapper {
-  display: table;
   width: 100%; }
-  #profile #profile-data .kv-wrapper .kv-pair .key {
-    width: 160px; }
-  #profile #profile-data .kv-wrapper .kv-pair .key, #profile #profile-data .kv-wrapper .kv-pair .value {
-    line-height: 30px;
-    padding-right: 20px; }
-    #profile #profile-data .kv-wrapper .kv-pair .key input, #profile #profile-data .kv-wrapper .kv-pair .value input {
-      width: 100%; }
+  #profile #profile-data .kv-wrapper .kv-pair {
+    display: flex; }
+    #profile #profile-data .kv-wrapper .kv-pair .key {
+      width: 95px; }
+    #profile #profile-data .kv-wrapper .kv-pair .value {
+      flex-grow: 1; }
+    #profile #profile-data .kv-wrapper .kv-pair .key, #profile #profile-data .kv-wrapper .kv-pair .value {
+      line-height: 30px;
+      padding-right: 20px; }
+      #profile #profile-data .kv-wrapper .kv-pair .key input, #profile #profile-data .kv-wrapper .kv-pair .value input {
+        width: 100%; }
   #profile #profile-data .kv-wrapper .error-text {
     color: red;
     font-size: 12px;

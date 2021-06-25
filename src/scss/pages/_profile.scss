@@ -51,13 +51,19 @@
 
         & .kv-wrapper{
 
-            display: table;
+            // display: table;
             width: 100%;
 
             & .kv-pair{
 
+                display: flex;
+
                 & .key{
-                    width: 160px;
+                    width: 95px;
+                }
+
+                & .value{
+                    flex-grow: 1;
                 }
         
                 & .key, & .value{
