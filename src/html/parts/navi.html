@@ -15,20 +15,16 @@
             </li>
         </ul>
         <div class="nav-actions">
-            <!-- Неавторизованный пользователь -->
-            <div class="">
-                <a href="#login" class="btn btn-small modal-trigger">
-                    <span class="white-text">Войти</span>
-                </a>
-            </div>
-            <!-- / -->
             <!-- Авторизованный пользователь -->
-            <ul class="profile-menu hidden">
+            <ul class="profile-menu">
                 <li>
                     <i class="mdi mdi-account-circle"></i>
                 </li>
                 <li>
                     <ul class="profile-menu-inner">
+                        <li><a href="#login" class="modal-trigger">Авторизация</a></li>
+                        <li><a href="/register.html">Регистрация</a></li>
+                        <li class="divider"></li>
                         <li><a href="/profile.html">Профиль</a></li>
                         <li><a href="/">Выход</a></li>
                     </ul>

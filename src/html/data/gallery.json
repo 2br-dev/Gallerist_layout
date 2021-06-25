@@ -27,7 +27,7 @@
     "location": "Нижний Новгород",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "inactive"
   },
   {
     "name": "Ваза с незабудками",
@@ -42,7 +42,7 @@
     "location": "Россия, Тольятти",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "inactive"
   },
   {
     "name": "Вечерний коньяк в одиночку",
@@ -57,7 +57,7 @@
     "location": "Италия, Сорренто",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "inactive"
   },
   {
     "name": "Домашний сторож",
