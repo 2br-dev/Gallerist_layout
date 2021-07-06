@@ -218,3 +218,30 @@ textarea{
 .sidenav .input-field{
     line-height: 1.5rem;
 }
+
+input[type="range"]{
+
+    -webkit-appearance: none;
+    background: transparent;
+    width: 100%;
+
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        border: 1px solid black;
+        background: $gold;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-25%);
+        transition: transform .2s;
+        border-radius: 2px;
+
+        &:hover{
+            transform: translateY(-25%) scale(1.6);
+        }
+    }
+
+    &::-webkit-slider-runnable-track{
+        background: rgba(black, .4);
+        height: 10px;
+    }
+}

@@ -3,9 +3,6 @@
     & .data-wrapper{
 
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
         & .chars{
     
@@ -60,6 +57,13 @@
                 & span{
                     display: none;
                 }
+            }
+        }
+
+        & p{
+
+            &:first-of-type{
+                margin-top: 0;
             }
         }
     

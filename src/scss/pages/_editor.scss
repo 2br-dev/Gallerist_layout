@@ -1,0 +1,21 @@
+#image-degree{
+
+    & ~ * .value{
+        display: block;
+        text-align: center;
+        margin-top: 6px;
+
+        &:after{
+            content: '°';
+        }
+    }
+}
+
+#image-scale{
+
+    & ~ * .value{
+        display: block;
+        text-align: center;
+        margin-top: 6px;
+    }
+}

@@ -49,14 +49,28 @@ body{
     
         &.page-header{
             margin-top: 200px;
+
+            @media(max-width: $extra-large){
+                margin-top: 100px;
+            }
     
             @media(max-width: $small){
-                margin-top: 100px;
+                margin-top: 60px;
             }
         }
     
         @media(max-width: 600px){
             font-size: 36px;
+        }
+
+        & .subheader{
+            display: block;
+            font-size: 32px;
+            line-height: 32px;
+
+            @media(max-width: 600px){
+                font-size: 18px;
+            }
         }
     }
     
