@@ -36,6 +36,9 @@ $(() => {
     $('body').on('reset', '.filters', resetFilters);
     $('body').on('click', '.reset-filter', resetFilter);
     $('body').on('click', '.accept', acceptMinMax);
+
+    $('body').on('autosize:resized', 'textarea.styled', updateFooterHeight);
+
     init();
 })
 
@@ -184,6 +187,8 @@ function init(){
             $('.lazy').lazy();
         })
     }
+
+    autosize(document.querySelectorAll('textarea.styled'));
 
     materialboxed = M.Materialbox.init(document.querySelectorAll('.materialboxed'));
 
