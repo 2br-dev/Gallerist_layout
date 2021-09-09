@@ -4133,14 +4133,14 @@ footer {
       width: 40%;
       max-width: 400px;
       background-color: #D2D2D2; }
-      @media (max-width: 1400px) {
-        footer .container .logo-wrapper {
-          display: none; } }
       footer .container .logo-wrapper .logo {
         display: block;
         padding-top: 100%;
         background: url("/img/footer-logo.svg") center center no-repeat;
         background-size: 30% auto; }
+      @media (max-width: 600px) {
+        footer .container .logo-wrapper {
+          display: none; } }
     footer .container .footer-main {
       padding: 2vw 6vw;
       flex-grow: 1; }
@@ -4195,6 +4195,20 @@ footer {
       footer .container .footer-success p {
         color: #fff;
         margin: 6px 0; }
+    footer .container .footer-menu {
+      column-count: 3;
+      column-gap: 1.5rem; }
+      footer .container .footer-menu a {
+        white-space: nowrap; }
+      @media (max-width: 1200px) {
+        footer .container .footer-menu {
+          column-count: 2; } }
+      @media (max-width: 800px) {
+        footer .container .footer-menu {
+          column-count: 1; } }
+    footer .container .footer-main {
+      display: flex;
+      align-items: center; }
 
 .container {
   margin: 0 auto;
@@ -6766,6 +6780,87 @@ div#gallery .gallery-entry .image, div#author .gallery-entry .image {
   display: block;
   text-align: center;
   margin-top: 6px; }
+
+.edit-image-wrapper {
+  position: relative; }
+  .edit-image-wrapper .edit-image-controls {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.edit-image-block .thumbnails-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .edit-image-block .thumbnails-wrapper .thumbnail-entry {
+    width: 25%;
+    padding: 2px;
+    opacity: .7; }
+    @media (max-width: 1900px) {
+      .edit-image-block .thumbnails-wrapper .thumbnail-entry {
+        width: 33%; } }
+    @media (max-width: 1200px) {
+      .edit-image-block .thumbnails-wrapper .thumbnail-entry {
+        width: 20%; } }
+    @media (max-width: 800px) {
+      .edit-image-block .thumbnails-wrapper .thumbnail-entry {
+        width: 33%; } }
+    @media (max-width: 600px) {
+      .edit-image-block .thumbnails-wrapper .thumbnail-entry {
+        width: 50%; } }
+    .edit-image-block .thumbnails-wrapper .thumbnail-entry .thumbnail-image {
+      padding-bottom: 70%;
+      background-size: cover;
+      background-position: center;
+      border: 8px solid transparent; }
+    .edit-image-block .thumbnails-wrapper .thumbnail-entry.active {
+      opacity: 1; }
+      .edit-image-block .thumbnails-wrapper .thumbnail-entry.active .thumbnail-image {
+        border: 8px solid #AA9859; }
+  .edit-image-block .thumbnails-wrapper .edit-image-controls {
+    width: 100%;
+    margin: 20px 0; }
+
+@media (max-width: 1200px) {
+  .edit-image-block .edit-image-controls {
+    order: -1; } }
+
+.edit-image-controls {
+  z-index: 20;
+  width: 300px;
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  border-radius: 6px;
+  color: #fff; }
+  .edit-image-controls .edit-control {
+    display: flex; }
+    .edit-image-controls .edit-control a {
+      display: inline-block;
+      line-height: 30px;
+      width: 30px;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      border-radius: 4px; }
+      .edit-image-controls .edit-control a:hover {
+        background: rgba(0, 0, 0, 0.5); }
+    .edit-image-controls .edit-control .range-wrapper {
+      padding: 0 10px;
+      padding-top: 4px;
+      flex-grow: 1; }
+      .edit-image-controls .edit-control .range-wrapper input[type=range]::-webkit-slider-runnable-track {
+        background: #fff;
+        height: 2px; }
+      .edit-image-controls .edit-control .range-wrapper input[type=range]::-webkit-slider-thumb {
+        background: #fff;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.7);
+        transform: translateY(calc(-50% + 2px)); }
+      .edit-image-controls .edit-control .range-wrapper input[type=range]:hover::-webkit-slider-thumb {
+        transform: translateY(calc(-50% + 2px)) scale(2); }
 
 a.insta-photo .photo-wrapper {
   display: block;

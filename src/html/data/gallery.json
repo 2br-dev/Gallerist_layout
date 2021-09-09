@@ -12,7 +12,8 @@
     "location": "Россия, Нижний Новгород",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   },
   {
     "name": "Цветок",
@@ -27,7 +28,8 @@
     "location": "Нижний Новгород",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": "inactive"
+    "extraClass": "inactive",
+    "thumbnailClass": ""
   },
   {
     "name": "Ваза с незабудками",
@@ -42,7 +44,8 @@
     "location": "Россия, Тольятти",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": "inactive"
+    "extraClass": "inactive",
+    "thumbnailClass": ""
   },
   {
     "name": "Вечерний коньяк в одиночку",
@@ -57,7 +60,8 @@
     "location": "Италия, Сорренто",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": "inactive"
+    "extraClass": "inactive",
+    "thumbnailClass": ""
   },
   {
     "name": "Домашний сторож",
@@ -72,7 +76,8 @@
     "location": "Россия, Москва",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   },
   {
     "name": "Натюрморт «Лимон»",
@@ -87,7 +92,8 @@
     "location": "Россия, Санкт-Петербург",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": "active"
   },
   {
     "name": "Лотосы",
@@ -102,7 +108,8 @@
     "location": "Россия, Тольятти",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": "selected"
+    "extraClass": "selected",
+    "thumbnailClass": ""
   },
   {
     "name": "Абстракция",
@@ -117,7 +124,8 @@
     "location": "Россия, Уфа",
     "liked": true,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   },
   {
     "name": "Белые орхидеи",
@@ -132,7 +140,8 @@
     "location": "США, Торонто",
     "liked": true,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   },
   {
     "name": "Натюрморт «Гранат»",
@@ -147,7 +156,8 @@
     "location": "Новороссийск",
     "liked": true,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   },
   {
     "name": "Музыкальное лето",
@@ -162,7 +172,8 @@
     "location": "Россия, Пятигорск",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   },
   {
     "name": "Гранат",
@@ -177,6 +188,7 @@
     "location": "Россия, Пятигорск",
     "liked": false,
     "published": "12 апреля 2021",
-    "extraClass": ""
+    "extraClass": "",
+    "thumbnailClass": ""
   }
 ]

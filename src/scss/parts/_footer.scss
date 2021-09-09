@@ -9,6 +9,7 @@ footer{
     z-index: -1;
     
     & .container{
+
         display: flex;
 
         & .logo-wrapper{
@@ -16,16 +17,16 @@ footer{
             width: 40%;
             max-width: 400px;
             background-color: #D2D2D2;
-
-            @media(max-width: 1400px){
-                display: none;
-            }
     
             & .logo{
                 display: block;
                 padding-top: 100%;
                 background: url("/img/footer-logo.svg") center center no-repeat;
                 background-size: 30% auto;
+            }
+
+            @media(max-width: $small){
+                display: none;
             }
         }
     
@@ -117,6 +118,30 @@ footer{
                 color: #fff;
                 margin: 6px 0;
             }
+        }
+
+        & .footer-menu{
+
+            column-count: 3;
+            column-gap: 1.5rem;
+
+            & a{
+                white-space: nowrap;
+            }
+
+            @media(max-width: $large){
+                column-count: 2;
+            }
+
+            @media(max-width: $medium){
+                column-count: 1;
+            }
+        }
+
+        & .footer-main{
+
+            display: flex;
+            align-items: center;
         }
     }
 }
